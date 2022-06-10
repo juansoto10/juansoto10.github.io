@@ -14,5 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-/home/juansoto23/juansoto10.github.io/imgs
-/mnt/c/Users/juanp/Pictures/Downloads
+
+<!-- /home/juansoto23/juansoto10.github.io/imgs
+/mnt/c/Users/juanp/Pictures/Downloads -->
