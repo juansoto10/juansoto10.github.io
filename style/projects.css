@@ -1,0 +1,26 @@
+.project--list li {
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.project--img {
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.project--description {
+    padding: 10px;
+    color: bisque;
+}
+
+.project--technology {
+    color: rgba(135, 31, 31, 0.829);
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.2)
+}

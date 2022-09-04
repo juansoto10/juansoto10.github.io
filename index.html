@@ -1,20 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-
-    <meta http-equiv=”Content-Type” content=”text/html; charset=ISO-8859-1″ />
-    <title>Juan Soto @juansoto10</title>
-    <link rel="stylesheet" href="style/style.css">
+    <title>Juan Soto @juansoto10 - Portfolio</title>
+    <meta name="description" content="Juan Soto Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv=”Content-Type” content=”text/html;charset=UTF-8″>
+    <meta name="author" content="Juan Soto">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">   
 </head>
 <body>
+    <header class="header">
+        <img class="header--img" src="https://images.pexels.com/photos/2676582/pexels-photo-2676582.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Logo">
+        <a href="./">Home</a>
+        <nav class="header--nav">
+            <ul class="header--list">
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="./projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="./about.html">About me</a>
+                </li>
+            </ul>
+        </nav>
 
-    <header>
 
-        <h1>Juan Soto</h1>
+        <!-- <h1>Juan Soto</h1>
         <h2>Developer</h2>
         
         <p id="icons">
@@ -23,17 +42,67 @@
         <a href="https://www.linkedin.com/in/juan-pablo-soto/"><img src="imgs/linkedin_icon.png" alt="linkedin"></a>
         <a href="https://github.com/juansoto10"><img src="imgs/github.png" alt="github"></a>
         <a href="https://dev.to/juansoto"><img src="imgs/dev_icon.png" alt="dev"></a>
-        </p>
-    
+        </p> -->
     </header>
 
-    <main>
-
-        <h3>About me</h3>
-
-        <p><img src="imgs/jp1_recopia.png" alt="juan soto"></p>
-        <p>Proximamente agregaremos contenido aquí. Estamos en construcción y hay muchas cosas aún por hacer 👾😎</p>
-
+    <main class="main">
+        <div class="main--container">
+            <div class="img--container">
+                <img class="main--img" src="./imgs/jp1_recopia.png" alt="juan soto foto">
+            </div>
+            <div class="main--info">
+                <h2 class="info--name">Juan Soto  Web Developer</h2>
+                <p class="info--description">Proximamente agregaremos contenido aquí. Estamos en construcción y hay muchas cosas aún por hacer 👾😎</p>
+                <div class="main--links">
+                    <a class="main--link main--link__salmon" href="./contact.html">Contact</a>
+                    <a class="main--link main--link__transparent" href="./about.html">About me</a>
+                </div>
+                <div class="main--social-media">
+                    <h2>Social media</h2>
+                    <ul>
+                        <li>
+                            <a href="">Twitter</a>
+                            <a href="">LinkedIN</a>
+                            <a href="">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <ul>
+            <li>
+                <img src="" alt="python">
+                <p>Python</p> 
+            </li>
+            <li>
+                <img src="" alt="javascript">
+                <p>JavaScript</p> 
+            </li>
+            <li>
+                <img src="" alt="html">
+                <p>HTML</p> 
+            </li>
+            <li>
+                <img src="" alt="css">
+                <p>CSS</p> 
+            </li>
+            <li>
+                <img src="" alt="git">
+                <p>Git</p> 
+            </li>
+            <li>
+                <img src="" alt="rdb">
+                <p>RDB</p> 
+            </li>
+            <li>
+                <img src="" alt="nrdb">
+                <p>NRDB</p> 
+            </li>
+        </ul>
+        <footer>
+            All rights reserved 2022.
+        </footer>
     </main>
 </body>
 </html>
