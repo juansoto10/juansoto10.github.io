@@ -84,9 +84,10 @@ body .switched {
   font-size: 1.3rem;
 }
 .logo span {
-color: var(--sec-green);
-font-size: 3.2rem;
-font-weight: 600;
+  color: var(--main-white);
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: -3px 2px 1px #131212;
 }
 .logo .logo-j {
   color: var(--red);
@@ -120,9 +121,6 @@ font-weight: 600;
 .main-menu__nav li:last-child {
   border-bottom: 1px solid #636363;
 }
-/* .main-menu__nav a {
-  width: 100%;
-} */
 .main-menu__social {
   height: 17%;
   width: 85%;
@@ -234,10 +232,9 @@ font-weight: 600;
   margin-bottom: 15vh;
   width: 100%;
   min-width: 280px;
-  /* height: 100vh; */
 }
 .sect-about__txt-zone {
-  width: 74%;
+  width: 76%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -253,7 +250,6 @@ font-weight: 600;
   text-shadow: 3px 2px 1px #131212;
   align-self: flex-start;
   letter-spacing: 0.1rem;
-  /* background-color: #FFFFFF; */
 }
 .sect-about__txt-zone p {
   margin-bottom: 25px;
@@ -271,10 +267,11 @@ font-weight: 600;
   box-shadow: 0px 0px 2px 1px #e9d8a6;
 }
 
+/* SECT SKILLS */
 .sect-skills {
   position: relative;
   display: flex;
-  margin-bottom: 12vh;
+  margin-bottom: 18vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -285,12 +282,13 @@ font-weight: 600;
 }
 .sect-skills__content {
   width: 80%;
+  padding-right: 16px;
 }
 .sect-skills__content p {
-  margin-bottom: 38px;
+  margin-bottom: 32px;
   font-size: 1.5rem;
   font-family: var(--sec-font);
-  width: 94%;
+  /* width: %; */
 }
 .sect-skills__list {
   display: grid;
@@ -318,6 +316,7 @@ font-weight: 600;
   color: var(--light-green);
 } 
 
+/* SECTION PROJECTS */
 .sect-projects {
   position: relative;
   display: flex;
@@ -330,13 +329,14 @@ font-weight: 600;
 }
 .sect-projects__txt-zone {
   width: 80%;
+  padding-right: 18px;
 }
 .sect-projects__txt-zone p {
   font-size: 1.5rem;
   font-family: var(--sec-font);
   margin-bottom: 45px;
   margin-top: 15px;
-  width: 88%;
+  /* width: 88%; */
 }
 
 .projects-wall {
@@ -353,11 +353,13 @@ font-weight: 600;
 .projects-zone {
   display: grid;
   margin-bottom: 25px;
-  padding-right: 20px;
-  justify-content: flex-start;
-  grid-template-columns: auto;
+  justify-content: center;
+  padding-right: 16px;
+  grid-template-columns: 100%;
   width: 80%;
+  max-width: 350px;
   gap: 25px;
+  max-width: 350px;
   /* height: 90%; */
 }
 .project {
@@ -368,13 +370,14 @@ font-weight: 600;
   border: none;
   border-radius: 4px;
   position: relative;
-  height: 210px;
-  max-width: 335px;
+  height: 200px;
+  width: 100%;
   background-color: var(--sec-black);
   box-shadow: 0px 0px 3px 1px #e9d8a6;
 }
 .project img {
   width: 100%;
+  max-width: 350px;
   height: 74%;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -445,7 +448,8 @@ font-weight: 600;
   text-align: left;
 }
 .sect-blog__articles {
-  width: 79%;
+  width: 81%;
+  
   display: grid;
   grid-template-columns: auto;
   gap: 50px;
@@ -453,6 +457,7 @@ font-weight: 600;
 }
 .post__article {
   height: 260px;
+  max-width: 430px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -514,7 +519,8 @@ font-weight: 600;
 }
 .sect-contact__txt-zone {
   width: 80%;
-  height: 90%;
+  padding-right: 16px;
+  height: 93%;
 }
 .sect-contact__txt-zone .title {
   margin-top: 0;
@@ -523,20 +529,20 @@ font-weight: 600;
 .sect-contact__txt-zone p {
   font-family: var(--sec-font);
   font-size: 1.5rem;
-  /* height: 26%; */
+  margin-bottom: 15px;
 } 
 
 .sect-contact .map {
-  width: 100%;
+  width: 96%;
   height: 35%;
   background: var(--light-green);
   border-radius: 4px;
-  box-shadow: 0 0 12px 0 var(--red);
+  box-shadow: 0 0 8px 0 var(--red);
 }
 .sect-contact .map iframe {
   width: 100%;
   height: 100%;
-  opacity: 0.35;
+  opacity: 0.45;
   border-radius: 4px;
 }
 .sect-contact .map span {
@@ -548,8 +554,8 @@ font-weight: 600;
 }
 
 .sect-contact__links {
-  /* margin-bottom: 30px; */
-  padding: 10PX 5px 10px;
+  margin-bottom: 10px;
+  padding: 10PX 10px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -568,9 +574,9 @@ font-weight: 600;
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 350px;
+  height: 400px;
   background-color: var(--main-black);
-  padding-bottom: 10px;
+  padding-top: 50px;
 }
 .footer__content {
   width: 90%;
