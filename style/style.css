@@ -22,7 +22,7 @@ html {
   font-size: 62.5%;
   font-family: var(--main-font);
   color: var(--main-white);
-  
+  background-color: var(--main-black);
 }
 
 .body {
@@ -32,6 +32,20 @@ html {
 /* CLASS INACTIVE */
 body .inactive {
   display: none;
+}
+body .hide {
+  /* clip-path: polygon(0 0, 100% 0%, 99% 0, 100% 0); */
+  /* clip-path: circle(0 at 100% 0); */
+  clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+  transition-duration: 0.5s;
+  /* width: 0; */
+  height: 0; 
+  animation-timing-function: ease;
+}
+body .switched {
+  /* clip-path: circle(141.2% at 100% 0); */
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  transition-duration: 0.5s;
 }
 
 /* MAIN MENU */
@@ -223,11 +237,12 @@ font-weight: 600;
   /* height: 100vh; */
 }
 .sect-about__txt-zone {
-  width: 80%;
+  width: 74%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-right: 15px;
 }
 .title {
   margin: 25px 0 30px;
@@ -242,7 +257,6 @@ font-weight: 600;
 }
 .sect-about__txt-zone p {
   margin-bottom: 25px;
-  padding-right: 10px;
   font-size: 1.5rem;
   font-family: var(--sec-font);
 }  
@@ -276,6 +290,7 @@ font-weight: 600;
   margin-bottom: 38px;
   font-size: 1.5rem;
   font-family: var(--sec-font);
+  width: 94%;
 }
 .sect-skills__list {
   display: grid;
@@ -285,6 +300,7 @@ font-weight: 600;
   padding: 18px 5px;
   justify-content: space-between;
   font-family: var(--sec-font);
+  width: 92%;
 }
 .sect-skills__list li {
   display: flex;
@@ -320,6 +336,7 @@ font-weight: 600;
   font-family: var(--sec-font);
   margin-bottom: 45px;
   margin-top: 15px;
+  width: 88%;
 }
 
 .projects-wall {
@@ -336,6 +353,8 @@ font-weight: 600;
 .projects-zone {
   display: grid;
   margin-bottom: 25px;
+  padding-right: 20px;
+  justify-content: flex-start;
   grid-template-columns: auto;
   width: 80%;
   gap: 25px;
@@ -349,7 +368,7 @@ font-weight: 600;
   border: none;
   border-radius: 4px;
   position: relative;
-  height: 215px;
+  height: 210px;
   max-width: 335px;
   background-color: var(--sec-black);
   box-shadow: 0px 0px 3px 1px #e9d8a6;
@@ -426,10 +445,11 @@ font-weight: 600;
   text-align: left;
 }
 .sect-blog__articles {
-  width: 80%;
+  width: 79%;
   display: grid;
   grid-template-columns: auto;
   gap: 50px;
+  padding-right: 18px;
 }
 .post__article {
   height: 260px;
@@ -452,7 +472,7 @@ font-weight: 600;
   color: var(--red);
 }
 .post-content h5 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   padding: 15px 15px 0;
 }
 .post-content h5 a {
