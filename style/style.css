@@ -62,7 +62,7 @@ body .inactive {
 .main-menu__top {
   height: 33%;
   width: 100%;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 .main-menu__top span {
   display: block;
@@ -71,13 +71,14 @@ body .inactive {
 }
 .logo span {
 color: var(--sec-green);
-font-size: 2.5rem;
+font-size: 3.2rem;
 font-weight: 600;
 }
 .logo .logo-j {
   color: var(--red);
   font-weight: 700;
-  font-size: 6.9rem;
+  font-size: 7.3rem; 
+  line-height: 6.2rem;
   text-shadow: -2px 1px 3px #e9d8a6, -4px 2px 3px #20c79e;
 }
 .main-menu__nav {
@@ -92,7 +93,6 @@ font-weight: 600;
   list-style: none;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
 }
 .main-menu__nav li {
   width: 100%;
@@ -138,6 +138,7 @@ font-weight: 600;
   top: 10px;
   right: 10px;
   border-radius: 3px;
+  cursor: pointer;
 }
 .mbtn-op,
 .mbtn-cl {
