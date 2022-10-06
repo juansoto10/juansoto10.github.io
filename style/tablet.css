@@ -1,0 +1,118 @@
+/* BODY */
+body .page-inner p {
+  font-size: 1.6rem;
+}
+
+/* SECTION HOME */
+.sect-home__txt-zone {
+  width: 86%;
+  padding-left: 10px;
+}
+  .sect-home__m-txt {
+    font-size: 4.9em;
+    font-weight: 700;
+    line-height: 4.4rem;
+    margin-bottom: 27px;
+  }
+  .sect-home__m-txt span {
+    color: var(--red);
+    font-weight: 700;
+    text-shadow: -2px 1px 3px #e9d8a6, -4px 2px 3px #20c79e;
+  }
+  .sect-home__s-txt {
+    font-size: 2.3rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    margin-bottom: 25px;
+    color: var(--gray);
+  }
+  
+  .button {
+    width: 210px;
+    height: 4.8rem;
+    font-size: 1.8rem;
+  }
+
+  /* SECT ABOUT */
+  .sect-about {
+    /* position: relative;
+    display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center;
+    align-items: center; */
+    margin-bottom: 10vh;
+    /* width: 100%;
+    min-width: 280px; */
+  }
+  .sect-about__txt-zone {
+    width: 86%;
+    /* display: flex; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 90vh;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 0;
+  }
+  .title {
+    /* margin: 25px 0 30px;
+    font-size: 3.7rem;
+    font-weight: 700;
+    color: var(--red);
+    text-shadow: 3px 2px 1px #131212;
+    align-self: flex-start;
+    letter-spacing: 0.1rem; */
+    width: 100%;
+    font-size: 4.2rem;
+  }
+  .sect-about__txt-zone p {
+    font-size: 1.6rem;
+    width: 52%;
+    padding-right: 10px;
+  }  
+  
+  .sect-about img {
+    /* margin: 20px 0 40px;
+    width: 195px;
+    height: 205px;
+    align-self: flex-start;
+    border-radius: 6px;
+    align-self: left;
+    box-shadow: 0px 0px 2px 1px #e9d8a6; */
+    width: 42%;
+    height: 40vw;
+    min-height: 190px;
+    /* max-width: ; */
+
+  }
+
+/* SECTION SKILLS */
+.sect-skills__content p {
+  margin-bottom: 35px;
+}
+.sect-skills__list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 40px;
+  list-style: none;
+  padding: 18px 5px;
+  justify-content: space-between;
+  font-family: var(--sec-font);
+  width: 95%;
+  margin: auto 0;
+}
+.sect-skills__list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sect-skills__list img {
+  width: 45px;
+  height: 45px;
+}
+.sect-skills__list span {
+  font-size: 1.5rem;
+  color: var(--light-green);
+}   
