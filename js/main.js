@@ -21,17 +21,20 @@ projectsButton.addEventListener('click', redirectProjects);
 
 function openMobileMenu() {
   openMenu.classList.toggle('inactive');
-  console.log('click btn-op');
+  // console.log('click btn-op');
   page.classList.toggle('inactive');
+  
   footer.classList.toggle('inactive');
 
   if (mainMenu.classList.contains('hide')) {
+    closeMenu.classList.remove('inactive');
     mainMenu.classList.remove('hide');
     mainMenu.classList.toggle('switched')
-    
   } else if (mainMenu.classList.contains('switched')) {
+    closeMenu.classList.add('inactive');
     mainMenu.classList.remove('switched');
     mainMenu.classList.add('hide');
+
   }
 }
 

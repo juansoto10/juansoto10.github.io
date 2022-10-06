@@ -1,60 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <title>Skills - Juan Soto @juansoto10 - Web Dev Portfolio</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Soto - Projects</title>
+    <meta name="author" content="Juan Soto Web Dev Portfolio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/projects.css">
-</head>
-<body>
-    <header class="header">
-        <img class="header--img" src="https://images.pexels.com/photos/2676582/pexels-photo-2676582.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Logo">
-        <a href="./">Home</a>
-        <nav class="header--nav">
-            <ul class="header--list">
-                <li>
-                    <a href="./contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="./blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="./projects.html">Projects</a>
-                </li>
-                <li>
-                    <a href="./about.html">About me</a>
-                </li>
-            </ul>
+    <link rel="stylesheet" href="./style/tablet.css" media="screen and (min-width: 450px)"> 
+  </head>
+  <body>
+    <main class="page-inner">
+      <menu class="main-menu hide">
+        <div class="mbtn mbtn-cl">
+          <img class="" src="../assets/icons/close_menu.svg" alt="close menu icon">
+        </div>
+
+        <div class="main-menu__top">
+          <a rel="home" class="logo" href="./index.html">
+            <span class="logo-j">J</span>
+            <span>Juan Soto</span>
+          </a>
+          <span>Web Developer</span>
+        </div>
+        <nav class="main-menu__nav">
+          <ul>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./skills.html">My Skills</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+          </ul>      
         </nav>
-
-
-        <!-- <h1>Juan Soto</h1>
-        <h2>Developer</h2>
-        
-        <p id="icons">
-        <a href="https://twitter.com/juansotovel"><img src="imgs/twitter_icon.png" alt="twitter"></a>
-        <a href="https://www.instagram.com/juan.dkm/"><img src="imgs/instagram_icon.png" alt="instagram"></a>
-        <a href="https://www.linkedin.com/in/juan-pablo-soto/"><img src="imgs/linkedin_icon.png" alt="linkedin"></a>
-        <a href="https://github.com/juansoto10"><img src="imgs/github.png" alt="github"></a>
-        <a href="https://dev.to/juansoto"><img src="imgs/dev_icon.png" alt="dev"></a>
-        </p> -->
-    </header>
-    <main>
-        <ul class="project--list">
-            <li>
-                <img class="project--img" src="https://picsum.photos/300" alt="Project1">
-                <p class="project--description">Descripción bien cool, social y agradable para todos mis amigos y colegas que conoceré en el futuro</p>
-                <span class="project--technology">HTML</span>
-                <span class="project--technology">CSS</span>
-                <div>
-                    <a href="">See here</a>
-                    <a href="">Repository</a>
-                </div>
-                
-            </li>
+        <ul class="main-menu__social">
+          <li>
+            <a href="https://www.linkedin.com/in/juan-pablo-soto/">
+              <img src="./assets/icons/linkedin-icon.svg" alt="linkedin icon">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/juansoto10">
+              <img src="./assets/icons/github-icon.svg" alt="github icon">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/juansoto10_/">
+              <img src="./assets/icons/instagram-icon.svg" alt="instagram icon">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/juansoto10_">
+              <img src="./assets/icons/twitter-icon.svg" alt="twitter icon">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./assets/icons/youtube-icon.svg" alt="youtube icon">
+            </a>
+          </li>
         </ul>
+      </menu>
+
+      <div class="page">
+        <div class="mbtn mbtn-op">
+          <img class="" src="../assets/icons/menu.svg" alt="menu icon">
+        </div>
+
+        <section class="sect-projects">
+          <div class="sect-projects__txt-zone">
+            <h2 class="title">My Portfolio</h2>
+            <p>
+              A small gallery of recent projects. It's only a drop in the ocean compared to the entire list. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eos ratione voluptatem quae ipsam fugiat quidem doloremque similique, sequi ullam sit explicabo eligendi corrupti magni error, reprehenderit culpa nisi et.
+            </p>
+          </div>
+        </section>
+  
+        <section class="projects-wall">
+          <div class="projects-zone">
+            <div class="project">
+              <img src="./assets/images/the_mined_path_game.png" alt="">
+              <div class="project__info">
+                <p class="project__title">The mined path game</p>
+                <p class="project__tools">
+                  <span>HTML</span> 
+                  <span>CSS</span> 
+                  <span>JavaScript</span>
+                </p>
+              </div>
+            </div>
+  
+            <div class="project">
+              <img src="./assets/images/the_mined_path_game.png" alt="">
+              <div class="project__info">
+                <p class="project__title">The mined path game</p>
+                <p class="project__tools">
+                  <span>HTML</span> 
+                  <span>CSS</span> 
+                  <span>JavaScript</span>
+                </p>
+              </div>
+            </div>
+  
+            <div class="project">
+              <img src="./assets/images/the_mined_path_game.png" alt="">
+              <div class="project__info">
+                <p class="project__title">The mined path game</p>
+                <p class="project__tools">
+                  <span>HTML</span> 
+                  <span>CSS</span> 
+                  <span>JavaScript</span>
+                </p>
+              </div>
+            </div>
+  
+            <div class="project">
+              <img src="./assets/images/the_mined_path_game.png" alt="">
+              <div class="project__info">
+                <p class="project__title">The mined path game</p>
+                <p class="project__tools">
+                  <span>HTML</span> 
+                  <span>CSS</span> 
+                  <span>JavaScript</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__button">
+            <button class="button button-projects">See more</button>
+          </div>
+        </section>
+      </div>
     </main>
-</body>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__icons">
+          <div>
+            <img src="./assets/icons/square_1.svg" alt="first icon">
+          </div>
+          <div>
+            <img src="./assets/icons/square.svg" alt="second icon">
+          </div>
+          <div>
+            <img src="./assets/icons/square_2.svg" alt="third icon">
+          </div>
+        </div>
+        <div class="footer__text">
+          <p>Aracataca es la ciudad donde nació uno de los colombianos más universalmente conocidos: Gabriel García Márquez. En 2006 hubo un referéndum para decidir cambiar el nombre de Aracataca, pasando a ser Aracataca-Macondo, la ciudad donde se desarrolla su gran obra “Cien años de soledad”. El referéndum fracasó ya que votaron “solo” 3.600 personas (no se alcanzó el mínimo de 7.400 votos para que el referéndum fuera legitimo) y Aracataca sigue siendo Aracataca.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>

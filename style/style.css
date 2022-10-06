@@ -71,7 +71,7 @@ body .switched {
 }
 .main-menu a {
   text-decoration: none;
-  color: #939191;
+  color: var(--main-white);
 }
 .main-menu__top {
   height: 33%;
@@ -108,18 +108,34 @@ body .switched {
   list-style: none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .main-menu__nav li {
   width: 100%;
   height: 20%;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #636363;
-  /* border-bottom: 1px solid #636363; */
+  border-bottom: 1px solid rgba(162, 162, 162, 0.848);
+  background-color: var(--red);
+}
+.main-menu__nav li:first-child {
+  background: linear-gradient(0deg, rgba(246,24,76,1) 0%, rgba(29,29,29,1) 100%);
 }
 .main-menu__nav li:last-child {
-  border-bottom: 1px solid #636363;
+  border-bottom: none;
+  background: linear-gradient(180deg, rgba(246,24,76,1) 0%, rgba(29,29,29,1) 100%);
+}
+.main-menu__nav li:first-child a,
+.main-menu__nav li:last-child a {
+  color: var(--main-green);
+}
+.main-menu__nav li a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-top: 2.8vh;
 }
 .main-menu__social {
   height: 17%;
@@ -196,6 +212,7 @@ body .switched {
 .sect-home__m-txt span {
   color: var(--red);
   font-weight: 700;
+  font-size: 4.5rem;
   text-shadow: -2px 1px 3px #e9d8a6, -4px 2px 3px #20c79e;
 }
 .sect-home__s-txt {
@@ -259,11 +276,11 @@ body .switched {
 
 .sect-about img {
   margin: 20px 0 40px;
-  width: 86%;
+  width: 90%;
   height: 70vw;
   min-height: 220px;
   align-self: flex-start;
-  border-radius: 6px;
+  border-radius: 4px;
   align-self: left;
   box-shadow: 0px 0px 2px 1px #e9d8a6;
 }
@@ -398,7 +415,7 @@ body .switched {
   margin-left: 11px;
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--light-green);
+  color: var(--main-white);
 }
 .project__tools {
   height: 49%;
@@ -415,12 +432,12 @@ body .switched {
   display: inline-flex;
   line-height: 1.5rem;
   font-weight: 300;
-  background-color: #f6184c57;
+  background-color: #e9d8a6aa;
   margin-right: 8px;
   padding: 2px 4px 5px;
   height: 78%;
   border-radius: 2px;
-  color: var(--main-white);
+  color: var(--sec-black);
   font-size: 1.2rem;
 }
 .project__button {
@@ -589,7 +606,7 @@ body .switched {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid var(--gray);
+  border-top: 1px solid var(--red);
   padding-top: 20px;
   padding-bottom: 10px;
   min-height: 220px;
