@@ -1,7 +1,7 @@
 /* BODY */
-body .page-inner p {
+/* body .page-inner p {
   font-size: 1.6rem;
-}
+} */
 
 /* SECTION HOME */
 .sect-home__txt-zone {
@@ -40,7 +40,9 @@ body .page-inner p {
     /* flex-direction: row; */
     /* justify-content: center;
     align-items: center; */
+    /* margin-bottom: 10vh; */
     margin-bottom: 10vh;
+    height: auto;
     /* width: 100%;
     min-width: 280px; */
   }
@@ -51,6 +53,7 @@ body .page-inner p {
     flex-wrap: wrap;
     height: 90vh;
     justify-content: space-between;
+    align-items: flex-start;
     padding-left: 10px;
     padding-right: 0;
   }
@@ -69,6 +72,7 @@ body .page-inner p {
     font-size: 1.6rem;
     width: 52%;
     padding-right: 10px;
+    margin: 0;
   }  
   
   .sect-about img {
@@ -82,24 +86,31 @@ body .page-inner p {
     width: 42%;
     height: 40vw;
     min-height: 190px;
+    margin: 10px 0 0 0;
+    max-width: 240px;
+    max-height: 272px;
     /* max-width: ; */
 
   }
 
 /* SECTION SKILLS */
+.sect-skills {
+  margin-bottom: 10vh;
+  height: 105vh;
+}
 .sect-skills__content p {
-  margin-bottom: 35px;
+  margin: 0;
+  padding-bottom: 25px;
 }
 .sect-skills__list {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  gap: 40px;
+  gap: 38px;
   list-style: none;
-  padding: 18px 5px;
   justify-content: space-between;
   font-family: var(--sec-font);
   width: 95%;
-  margin: auto 0;
+  margin: 20px 0 0 0;
 }
 .sect-skills__list li {
   display: flex;
@@ -115,4 +126,50 @@ body .page-inner p {
 .sect-skills__list span {
   font-size: 1.5rem;
   color: var(--light-green);
-}   
+}
+
+/* SECTION PROJECTS */
+/* .sect-projects {
+  
+} */
+.sect-projects__txt-zone {
+  padding: 0;
+}
+
+/* .projects-wall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.projects-zone {
+  max-width: none;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: auto;
+  height: auto;
+  padding: 0 0 0 10px;
+}
+.project {
+  width: 250px;
+  height: 175px;
+}
+.project__tools span {
+  padding: 0 4px;
+}
+
+/* SECTION CONTACT */
+
+.sect-contact__txt-zone {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.sect-contact__links {
+  justify-content: space-around;
+}
+.sect-contact .map {
+  width: 80%;
+  height: 48%;
+  align-self: center;
+}
