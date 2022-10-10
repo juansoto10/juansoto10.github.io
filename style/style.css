@@ -135,7 +135,7 @@ body .switched {
   width: 100%;
   height: 100%;
   position: absolute;
-  padding-top: 2.8vh;
+  padding-top: 3.2vh;
 }
 .main-menu__social {
   height: 17%;
@@ -277,9 +277,11 @@ body .switched {
 
 .sect-about img {
   margin: 20px 0 40px;
-  width: 88%;
+  width: 86%;
+  max-width: 300px;
   height: 63vw;
   min-height: 220px;
+  max-height: 310px;
   align-self: flex-start;
   border-radius: 4px;
   align-self: left;
@@ -373,11 +375,11 @@ body .switched {
 .projects-zone {
   display: grid;
   margin-bottom: 25px;
-  justify-content: center;
+  justify-content: flex-start;
   padding-right: 16px;
   grid-template-columns: 100%;
   width: 80%;
-  max-width: 350px;
+  /* max-width: 350px; */
   gap: 25px;
   max-width: 340px;
   /* height: 90%; */
@@ -514,7 +516,8 @@ body .switched {
 }
 
 .sect-blog__see-more {
-  margin: 10px 0 25px;
+  margin: 40px 0 15px;
+  align-self: center;
 }
 .sect-blog__see-more a {
   text-decoration: none;
@@ -554,7 +557,7 @@ body .switched {
 
 .sect-contact .map {
   width: 98%;
-  height: 38%;
+  height: 39%;
   background: var(--light-green);
   border-radius: 4px;
   box-shadow: 0 0 8px 0 var(--red);
@@ -595,10 +598,10 @@ body .switched {
   text-align: center;
   width: 100%;
   min-width: 280px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   /* height: 400px; */
-  background-color: var(--main-black);
-  padding-top: 50px;
+  background-color: var(--sec-black);
+  padding-top: 38px;
 }
 .footer__content {
   width: 90%;
@@ -607,7 +610,7 @@ body .switched {
   justify-content: center;
   align-items: center;
   border-top: 1px solid var(--red);
-  padding-top: 20px;
+  padding-top: 14px;
   padding-bottom: 10px;
   min-height: 220px;
 }
