@@ -202,7 +202,7 @@ body .switched {
 .sect-home__txt-zone {
   width: 80%;
   color: var(--main-white);
-
+  padding-left: 6px;
 }
 .sect-home__m-txt {
   font-size: 3.9rem;
@@ -252,7 +252,7 @@ body .switched {
   min-width: 280px;
 }
 .sect-about__txt-zone {
-  width: 76%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -277,9 +277,9 @@ body .switched {
 
 .sect-about img {
   margin: 20px 0 40px;
-  width: 86%;
+  width: 85%;
   max-width: 300px;
-  height: 63vw;
+  height: 64vw;
   min-height: 220px;
   max-height: 310px;
   align-self: flex-start;
@@ -305,11 +305,23 @@ body .switched {
   width: 80%;
   padding-right: 16px;
 }
+.sect-skills__content--two {
+  justify-content: flex-start;
+  position: absolute;
+  top: 30px;
+
+}
+.sect-skills__content--two .title {
+  margin-top: 0;
+}
 .sect-skills__content p {
   margin-bottom: 35px;
   font-size: 1.5rem;
   font-family: var(--sec-font);
   /* width: %; */
+}
+.sect-skills__content--two p {
+  margin-bottom: 43px;
 }
 .sect-skills__list {
   display: grid;
@@ -601,7 +613,7 @@ body .switched {
   /* margin-bottom: 20px; */
   /* height: 400px; */
   background-color: var(--sec-black);
-  padding-top: 38px;
+  padding: 38px 0 28px 0;
 }
 .footer__content {
   width: 90%;
