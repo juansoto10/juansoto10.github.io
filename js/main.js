@@ -42,6 +42,16 @@ if (mainMenu.classList.contains('switched')) {
   sectHome.classList.toggle('inactive');
 }
 
+// if (window.innerWidth >= 900) {
+//   mainMenu.classList.remove('hide');
+//   openMenu.classList.add('hide');
+//   closeMenu.classList.add('hide');
+// } else if (window.innerWidth < 900) {
+//   mainMenu.classList.add('hide');
+//   openMenu.classList.remove('hide');
+//   closeMenu.classList.remove('hide');
+// }
+
 function redirectContact() {
   window.location.href='https://github.com/juansoto10';
   console.log('click contact');

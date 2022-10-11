@@ -99,9 +99,8 @@
   }
 
 /* SECTION SKILLS */
-.sect-skills {
-  margin-bottom: 10vh;
-  height: 105vh;
+.page-inner .sect-skills {
+  margin-bottom: 0;
 }
 .sect-skills__content {
   padding: 0;

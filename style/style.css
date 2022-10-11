@@ -277,7 +277,7 @@ body .switched {
 
 .sect-about img {
   margin: 20px 0 40px;
-  width: 85%;
+  width: 83%;
   max-width: 300px;
   height: 64vw;
   min-height: 220px;
@@ -301,6 +301,9 @@ body .switched {
   text-align: left;
   height: 100vh;
 }
+.sect-skills--two {
+  margin: 0;
+}
 .sect-skills__content {
   width: 80%;
   padding-right: 16px;
@@ -308,7 +311,7 @@ body .switched {
 .sect-skills__content--two {
   justify-content: flex-start;
   position: absolute;
-  top: 30px;
+  top: 34px;
 
 }
 .sect-skills__content--two .title {
@@ -340,6 +343,7 @@ body .switched {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 34px;
 }
 .sect-skills__list img {
   width: 35px;
