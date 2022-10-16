@@ -9,7 +9,7 @@
 
 .main-menu {
   position: fixed;
-  width: 135px;
+  width: 120px;
   height: 100vh;
 }
 
@@ -17,8 +17,8 @@
 
 .page {
   position: absolute;
-  left: 135px;
-  width: calc(100% - 135px);
+  left: 120px;
+  width: calc(100% - 120px);
 }
 
 /* MAIN MENU */
@@ -27,7 +27,7 @@
   height: 30%;
 }
 .logo span {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 .logo .logo-j {
@@ -36,6 +36,7 @@
   font-size: 7.9rem; 
   line-height: 6.2rem;
   text-shadow: -2px 1px 3px #e9d8a6, -4px 2px 3px #20c79e;
+  margin-bottom: 16px;
 }
 .main-menu__nav {
   height: 40%;
@@ -68,32 +69,32 @@
   align-items: center;
 }
 .main-menu__social img {
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
 }
 
 /* TITLE (GENERAL) */
 
 .page .title {
   margin: 0 0 52px;
-  font-size: 7rem;
+  font-size: 6.8rem;
 }
 
 /* BUTTON (GENERAL) */
 
 .button {
-  width: 222px;
-  height: 54px;
+  width: 215px;
+  height: 48px;
 }
 
 /*  SECT HOME */
 .sect-home__m-txt {
-  font-size: 10rem;
-  line-height: 8.9rem;
+  font-size: 8.5rem;
+  line-height: 7.1rem;
 }
 .sect-home__m-txt span {
-  font-size: 10.3rem;
-  line-height: 8.9rem;
+  font-size: 8.7rem;
+  line-height: 7.1rem;
 }
 
 /* SECT ABOUT */
@@ -102,9 +103,7 @@
   margin-bottom: 8vh;
 }
 .sect-about__txt-zone {
-  /* width: 88%; */
   height: auto;
-  /* justify-content: flex-start; */
   padding: 0;
 }
 .sect-about__txt-zone p {
@@ -114,9 +113,9 @@
 .sect-about__txt-zone img {
   width: 38%;
   margin: 10px 0 0 26px;
-  max-width: 350px;
+  max-width: 340px;
   height: 29.5vw;
-  max-height: 360px;
+  max-height: 350px;
 }
 
 /* SECT SKILLS */
@@ -134,8 +133,8 @@
   row-gap: 60px;
 }
 .sect-skills__list img {
-  width: 58px;
-  height: 58px;
+  width: 55px;
+  height: 55px;
   margin-bottom: 6px;
 }
 .sect-skills__list span {
@@ -235,6 +234,3 @@
   min-height: 140px;
   /* height: 150px; */
 }
-
-
-/* A partir del 1600 hacer otro media query */
