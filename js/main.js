@@ -11,6 +11,9 @@ openMenu.addEventListener('click', openMobileMenu);
 closeMenu.addEventListener('click', openMobileMenu);
 contactButton.addEventListener('click', redirectContact);
 projectsButton.addEventListener('click', redirectProjects);
+window.addEventListener('resize', displayMenu);
+window.addEventListener('load', displayMenu);
+// window.addEventListener('change', displayMenu);
 
 // function toggleMobileMenu() {
 //   mainMenu.classList.toggle('inactive');
@@ -38,10 +41,22 @@ function openMobileMenu() {
   }
 }
 
+
 if (mainMenu.classList.contains('switched')) {
   sectHome.classList.toggle('inactive');
 }
 
+function displayMenu() {
+  if (window.innerWidth >= 900) {
+    mainMenu.classList.remove('hide');
+    openMenu.classList.add('inactive');
+    closeMenu.classList.add('inactive')
+  } else {
+    mainMenu.classList.add('hide');
+    openMenu.classList.remove('inactive');
+    closeMenu.classList.remove('inactive');
+  }
+}
 // if (window.innerWidth >= 900) {
 //   mainMenu.classList.remove('hide');
 //   openMenu.classList.add('hide');
