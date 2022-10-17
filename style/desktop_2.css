@@ -102,6 +102,13 @@
 .sect-about {
   margin-bottom: 8vh;
 }
+.sect-about--two {
+  padding-top: 42px;
+  justify-content: flex-start;
+}
+.sect-about--two .sect-about__txt-zone .title {
+  margin-bottom: 80px;
+}
 .sect-about__txt-zone {
   height: auto;
   padding: 0;
@@ -122,16 +129,26 @@
 .page-inner .sect-skills {
   margin-bottom: 9vh;
 }
+.page-inner .sect-skills--two {
+  min-height: 105vh;
+}
+.sect-skills__content--two {
+  top: 64px;
+}
+
 .sect-skills__content {
   width: 86%;
+}
+.sect-skills__content .title {
+  line-height: 6.2rem;
 }
 
 .sect-skills__content p {
   font-size: 1.6rem;
 }
-.sect-skills__list {
-  row-gap: 60px;
-}
+/* .sect-skills__list {
+  row-gap: 50px;
+} */
 .sect-skills__list img {
   width: 55px;
   height: 55px;
@@ -142,6 +159,9 @@
 }
 
 /* SECT PROJECTS */
+.sect-projects {
+  padding-top: 40px;
+}
 
 .sect-projects__txt-zone {
   width: 86%;
@@ -169,11 +189,15 @@
 }
 .project__info {
   max-height: 58px;
-  padding: 0 0 5px 8px;
+  padding: 0 0 9px 10px;
 }
 .project .project__title {
   font-size: 1.5rem;
   margin-bottom: 3px;
+}
+.project__tools {
+  margin-top: 6px;
+  padding-bottom: 4px;
 }
 .project .project__info span {
   font-size: 1.4rem;
@@ -184,6 +208,16 @@
 }
 
 /* SECT BLOG */
+.sect-blog--two {
+  min-height: 100vh;
+  /* position: relative; */
+}
+.sect-blog--two .sect-blog__title {
+  /* position: absolute;
+  top: 40px; */
+  padding-top: 40px;
+  margin-bottom: 0;
+}
 
 .sect-blog__title {
   width: 86%;
@@ -220,6 +254,7 @@
 /* SECT CONTACT */
 .sect-contact {
   border-bottom: 1px solid #131212;
+  padding-top: 15px;
 }
 .sect-contact__txt-zone {
   width: 86%;

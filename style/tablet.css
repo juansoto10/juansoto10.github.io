@@ -46,6 +46,10 @@
     /* width: 100%;
     min-width: 280px; */
   }
+  .sect-about--two {
+    padding-top: 42px;
+    justify-content: flex-start;
+  }
   .sect-about__txt-zone {
     width: 86%;
     position: relative;
@@ -72,6 +76,10 @@
   .sect-about__txt-zone .title {
     margin-bottom: 0;
     margin-top: 165px;
+  }
+  .sect-about--two .sect-about__txt-zone .title {
+    margin: 0;
+    /* margin-top: 165px; */
   }
   .sect-about__txt-zone p {
     font-size: 1.6rem;

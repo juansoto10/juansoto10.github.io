@@ -123,7 +123,9 @@
 .sect-skills__content {
   width: 86%;
 }
-
+.sect-skills__content .title {
+  margin-bottom: 68px;
+}
 .sect-skills__content p {
   font-size: 1.6rem;
 }
@@ -164,7 +166,7 @@
 }
 .project__info {
   max-height: 58px;
-  padding: 0 0 5px 8px;
+  padding: 0 0 8px 12px;
 }
 .project .project__title {
   font-size: 1.5rem;
@@ -179,6 +181,9 @@
 }
 
 /* SECT BLOG */
+.sect-blog--two {
+  justify-content: flex-start;
+}
 
 .sect-blog__title {
   width: 86%;
@@ -223,6 +228,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+.sect-contact__txt-zone .title {
+  margin-bottom: 40px;
 }
 .sect-contact__txt-zone p {
   width: 100%;
