@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Juan Pablo Soto Web Developer Portfolio">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
     
     <!-- CSS Styles -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -19,8 +18,12 @@
     <!-- <link rel="stylesheet" href="./style/desktop.css" media="screen and (min-width: 1200px)"> -->
 
     <!-- Favicons -->
-
-    <!-- Animate CSS CDN -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/faviconjp_2.png"
+    />
 
     <!-- Title -->
     <title>Juan Soto @juansoto10 - Web Developer</title>
@@ -32,10 +35,10 @@
       <nav>
         <h1><a href="index.html">JUAN SOTO</a></h1>
         <ul class="nav-links hide">
-          <li><a href="./about.html" class="nav-links__opt opt-about">About</a></li>
-          <li><a href="./skills.html" class="nav-links__opt opt-skills">Skills</a></li>
-          <li><a href="./projects.html" class="nav-links__opt opt-projects">Projects</a></li>
-          <li><a href="./contact.html" class="nav-links__opt opt-contact">Contact</a></li>
+          <li><a href="#about" class="nav-links__opt opt-about">About</a></li>
+          <li><a href="#skills" class="nav-links__opt opt-skills">Skills</a></li>
+          <li><a href="#projects" class="nav-links__opt opt-projects">Projects</a></li>
+          <li><a href="#contact" class="nav-links__opt opt-contact">Contact</a></li>
         </ul>
         <div class="mbtn mbtn-op">
           <img class="" src="../assets/icons/menu.svg" alt="menu icon">
@@ -47,7 +50,7 @@
 
       
       <!-- Home section -->
-      <section class="sect-home">
+      <section class="sect-home" id="home">
           <div class="sect-home__txt-zone">
             <h1 class="sect-home__m-txt">Hey!<br>I'm <span>Juan</span>,<br>Web Developer</h1>
             <p class="sect-home__s-txt">Front-end / Back-end</p>
@@ -56,65 +59,108 @@
       </section>
       
       <!-- About section -->
-      <section class="sect-about inactive">
+      <section class="sect-about" id="about">
           <div class="sect-about__txt-zone">
             <h2 class="title">About me</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas minima aliquam vero, expedita sit asperiores molestias illo ipsa eaque consequatur repellat sequi in optio doloremque officiis natus dicta et quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eius ipsa ipsam, natus hic consequatur recusandae alias dolorum est nihil nostrum voluptatibus eveniet possimus consectetur sunt, adipisci atque impedit? Ratione!</p>
-            <img src="./assets/images/jp1_copia.png" alt="juan soto photo">
           </div> 
+          <div class="sect-about__img">
+            <img 
+              src="./assets/images/jpsoto_photo_v2.png" 
+              alt="juan pablo soto" 
+              loading="lazy"
+            >
+          </div>
       </section>
       
       <!-- Skills section -->
-      <section class="sect-skills inactive">
-          <div class="sect-skills__content">
+      <section class="sect-skills" id="skills">
+          <div class="sect-skills__txt-zone">
             <h2 class="title">What do I use in Tech?</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos optio mollitia ad animi corporis libero nemo at velit.</p>
-            <ul class="sect-skills__list">
-              <li>
-                <img src="./assets/icons/javascript.svg" alt="JavaScript">
-                <span>JavaScript</span> 
-              </li>
-              <li>
-                <img src="./assets/icons/python.svg" alt="python">
-                <span>Python</span> 
-              </li>
-              <li>
-                <img src="./assets/icons/html-5.svg" alt="html">
-                <span>HTML5</span> 
-              </li>
-              <li>
-                <img src="./assets/icons/css-3.svg" alt="css">
-                <span>CSS3</span> 
-              </li>
-              <li>
-                <img src="./assets/icons/react.svg" alt="react.js">
-                <span>ReactJS</span> 
-              </li>
-              <li>
-                <img src="./assets/icons/mysql-icon.svg" alt="SQL">
-                <span>SQL</span>
-              </li>
-              <li>
-                <img src="./assets/icons/git-icon.svg" alt="git">
-                <span>Git</span> 
-              </li>
-              <li>
-                <img src="./assets/icons/linux-tux.svg" alt="linux">
-                <span>Linux</span> 
-              </li>
-              <li>
-                <img src="./assets/icons/figma.svg" alt="figma">
-                <span>Figma</span> 
-              </li>
-            </ul>
           </div>
+            
+          <ul class="sect-skills__list">
+            <li>
+              <img 
+                src="./assets/icons/python.svg" 
+                alt="python"
+                loading="lazy"
+              >
+              <span>Python</span> 
+            </li>
+            <li>
+              <img 
+                src="./assets/icons/django_icon.svg" 
+                alt="django"
+                loading="lazy"
+              >
+              <span>Django</span> 
+            </li>
+            <li>
+              <img 
+                src="./assets/icons/mysql-icon.svg" 
+                alt="SQL"
+                loading="lazy"
+              >
+              <span>MySQL</span>
+            </li>
+            <li>
+              <img 
+                src="./assets/icons/javascript.svg" 
+                alt="JavaScript"
+                loading="lazy"
+              >
+              <span>JavaScript</span> 
+            </li>
+            <li>
+              <img 
+                src="./assets/icons/html-5.svg" 
+                alt="html"
+                loading="lazy"
+              >
+              <span>HTML5</span> 
+            </li>
+            <li>
+              <img 
+                src="./assets/icons/css-3.svg" 
+                alt="css"
+                loading="lazy"
+              >
+              <span>CSS3</span> 
+            </li>
+            <li>
+              <img 
+                src="./assets/icons/react.svg" 
+                alt="react"
+                loading="lazy"
+              >
+              <span>React.js</span> 
+            </li>
+            <li>
+              <img 
+                src="./assets/icons/git-icon.svg" 
+                alt="git"
+                loading="lazy"
+              >
+              <span>Git</span> 
+            </li>
+            <li>
+              <img 
+                src="./assets/icons/linux-tux.svg" 
+                alt="linux"
+                loading="lazy"
+              >
+              <span>Linux</span> 
+            </li>
+          </ul>   
       </section>
 
       <!-- Projects section -->
-      <section class="sect-projects inactive">
+      <section class="sect-projects" id="projects">
           <!-- Text zone -->
           <div class="sect-projects__txt-zone">
-            <h2 class="title">My Portfolio</h2>
+            <h2 class="title">My Projects</h2>
             <p>
               A small gallery of recent projects. It's only a drop in the ocean compared to the entire list. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eos ratione voluptatem quae ipsam fugiat quidem doloremque similique, sequi ullam sit explicabo eligendi corrupti magni error, reprehenderit culpa nisi et.
             </p>
@@ -123,9 +169,13 @@
           <!-- Projects wall -->
           <div class="sect-projects__wall">
             <div class="project">
-              <img src="./assets/images/the_mined_path_game.png" alt="">
+              <img 
+                src="./assets/images/the_mined_path_game.png" 
+                alt=""
+                loading="lazy"
+              >
               <div class="project__info">
-                <p class="project__title">The mined path game</p>
+                <h3 class="project__title">The mined path game</h3>
                 <p class="project__tools">
                   <span>HTML</span> 
                   <span>CSS</span> 
@@ -135,9 +185,13 @@
             </div>
   
             <div class="project">
-              <img src="./assets/images/the_mined_path_game.png" alt="">
+              <img 
+                src="./assets/images/the_mined_path_game.png" 
+                alt=""
+                loading="lazy"
+              >
               <div class="project__info">
-                <p class="project__title">The mined path game</p>
+                <h3 class="project__title">The mined path game</h3>
                 <p class="project__tools">
                   <span>HTML</span> 
                   <span>CSS</span> 
@@ -147,9 +201,13 @@
             </div>
   
             <div class="project">
-              <img src="./assets/images/the_mined_path_game.png" alt="">
+              <img 
+                src="./assets/images/the_mined_path_game.png" 
+                alt=""
+                loading="lazy"
+              >
               <div class="project__info">
-                <p class="project__title">The mined path game</p>
+                <h3 class="project__title">The mined path game</h3>
                 <p class="project__tools">
                   <span>HTML</span> 
                   <span>CSS</span> 
@@ -159,9 +217,13 @@
             </div>
   
             <div class="project">
-              <img src="./assets/images/the_mined_path_game.png" alt="">
+              <img 
+                src="./assets/images/the_mined_path_game.png" 
+                alt=""
+                loading="lazy"
+              >
               <div class="project__info">
-                <p class="project__title">The mined path game</p>
+                <h3 class="project__title">The mined path game</h3>
                 <p class="project__tools">
                   <span>HTML</span> 
                   <span>CSS</span> 
@@ -178,41 +240,103 @@
       </section>
 
       <!-- Contact section -->
-      <section class="sect-contact inactive">
+      <section class="sect-contact" id="contact">
           <div class="sect-contact__txt-zone">
             <h2 class="title">Contact me</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non exercitationem beatae in, nulla enim numquam incidunt quae, harum voluptates itaque adipisci quis libe.</p>
-  
-            <div class="sect-contact__links">
-              <a class="contact-icon" href="https://www.linkedin.com/in/juan-pablo-soto/">
-                <img src="./assets/icons/linkedin-icon.svg" alt="linkedin icon">
-              </a>
-              <a class="contact-icon" href="https://github.com/juansoto10">
-                <img src="./assets/icons/github-icon.svg" alt="github icon">
-              </a>
-              <a class="contact-icon" href="https://www.instagram.com/juansoto10_/">
-                <img src="./assets/icons/instagram-icon.svg" alt="instagram icon">
-              </a>
-              <a class="contact-icon" href="https://twitter.com/juansoto10_">
-                <img src="./assets/icons/twitter-icon.svg" alt="twitter icon">
-              </a>
-            </div>
-  
-            <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1962744.5824489745!2d-75.9198392715557!3d5.037283718643632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e39c5c6c761990d%3A0x4b91b4e5ee425e42!2sTulua%2C%20Tulu%C3%A1%2C%20Valle%20del%20Cauca!5e0!3m2!1sen!2sco!4v1664830896827!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <span>Based in Tuluá, Colombia.</span>
-            </div>
           </div>
+
+          <div class="sect-contact__form-cont">
+            <form action="https://formspree.io/f/xeqdywzr" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter your name"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Enter your email"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  rows="9"
+                  placeholder="Enter a message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Send message"
+                id="submit-btn"
+                class="button button-send"
+              />
+            </form> 
+          </div>
+              
+          
+          
       </section>
       
       <!-- Social accounts - Fixed to the right -->
-
+      <div class="social-links">
+        <a class="contact-icon" href="https://www.linkedin.com/in/juan-pablo-soto/" target="_blank">
+          <img 
+            src="./assets/icons/linkedin-icon.svg" 
+            alt="Linkedin"
+            loading="lazy"
+          >
+        </a>
+        <a class="contact-icon" href="https://github.com/juansoto10" target="_blank">
+          <img 
+            src="./assets/icons/github-icon.svg" 
+            alt="Github"
+            loading="lazy"
+          >
+        </a>
+        <a class="contact-icon" href="https://www.instagram.com/juansoto10_/" target="_blank">
+          <img 
+            src="./assets/icons/instagram-icon.svg" 
+            alt="Instagram"
+            loading="lazy"
+          >
+        </a>
+        <a class="contact-icon" href="https://twitter.com/juansoto10_" target="_blank">
+          <img 
+            src="./assets/icons/twitter-icon.svg" 
+            alt="Twitter"
+            loading="lazy"
+          >
+        </a>
+      </div>
 
       <!-- Scroll to top -->
-
+      <i class="scroll-up" id="scroll-up">
+        <img
+          src="./assets/icons/arrow_up.svg"
+          class="arrow-up"
+          alt="scroll-up"
+        />
+      </i>
 
       <!-- Footer -->
-      <footer class="footer inactive">
+      <footer class="footer">
           <div class="footer__content">
             <div class="footer__icons">
               <div>
@@ -226,8 +350,14 @@
               </div>
             </div>
             <div class="footer__text">
-              <p>Aracataca es la ciudad donde nació uno de los colombianos más universalmente conocidos: Gabriel García Márquez. En 2006 hubo un referéndum para decidir cambiar el nombre de Aracataca, pasando a ser Aracataca-Macondo, la ciudad donde se desarrolla su gran obra “Cien años de soledad”. El referéndum fracasó ya que votaron “solo” 3.600 personas (no se alcanzó el mínimo de 7.400 votos para que el referéndum fuera legitimo) y Aracataca sigue siendo Aracataca.</p>
+              <p>Aracataca is the city where one of the most universally known Colombians was born: Gabriel García Márquez. In 2006 there was a referendum to decide to change the name of Aracataca, becoming Aracataca-Macondo, the city where his great work “One Hundred Years of Solitude” takes place. The referendum failed since “only” 3,600 people voted (the minimum of 7,400 votes was not reached for the referendum to be legitimate) and Aracataca is still Aracataca.</p>
             </div>
+          </div>
+          <div class="footer__author">
+            <p>&copy; Copyright 2022</p>
+            <p>
+              Built with <span>&#x2661;</span> by <a href="https://www.instagram.com/juansoto10_/" target="_blank">Juan Pablo Soto @juansoto10_</a>
+            </p>
           </div>
       </footer>
     </main> 
@@ -240,91 +370,3 @@
 
   </body>
 </html>
-
-
-<!-- 
-
-## Original main menu
-
-<menu class="main-menu hide">
-  <div class="mbtn mbtn-cl">
-    <img class="" src="../assets/icons/close_menu.svg" alt="close menu icon">
-  </div>
-  <div class="main-menu__top">
-    <a rel="home" class="logo" href="./index.html">
-      <span class="logo-j">J</span>
-      <span>Juan Soto</span>
-    </a>
-    <span>Web Developer</span>
-  </div>
-  <nav class="main-menu__nav">
-    <ul>
-      <li><a href="./about.html">About</a></li>
-      <li><a href="./skills.html">My Skills</a></li>
-      <li><a href="./projects.html">Projects</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-      <li><a href="./blog.html">Blog</a></li>
-    </ul>      
-  </nav>
-  <ul class="main-menu__social">
-    <li>
-      <a href="https://www.linkedin.com/in/juan-pablo-soto/">
-        <img src="./assets/icons/linkedin-icon.svg" alt="linkedin icon">
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/juansoto10">
-        <img src="./assets/icons/github-icon.svg" alt="github icon">
-      </a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/juansoto10_/">
-        <img src="./assets/icons/instagram-icon.svg" alt="instagram icon">
-      </a>
-    </li>
-    <li>
-      <a href="https://twitter.com/juansoto10_">
-        <img src="./assets/icons/twitter-icon.svg" alt="twitter icon">
-      </a>
-    </li>
-    <li>
-      <a href="">
-        <img src="./assets/icons/youtube-icon.svg" alt="youtube icon">
-      </a>
-    </li>
-  </ul>
-</menu>
-
-## Button open mobile menu
-
-<div class="mbtn mbtn-op">
-  <img class="" src="../assets/icons/menu.svg" alt="menu icon">
-</div>
-
-
-## Social accounts
-
-<ul class="main-menu__social">
-  <li>
-    <a href="https://www.linkedin.com/in/juan-pablo-soto/">
-      <img src="./assets/icons/linkedin-icon.svg" alt="linkedin icon">
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/juansoto10">
-      <img src="./assets/icons/github-icon.svg" alt="github icon">
-    </a>
-  </li>
-  <li>
-    <a href="https://www.instagram.com/juansoto10_/">
-      <img src="./assets/icons/instagram-icon.svg" alt="instagram icon">
-    </a>
-  </li>
-  <li>
-    <a href="https://twitter.com/juansoto10_">
-      <img src="./assets/icons/twitter-icon.svg" alt="twitter icon">
-    </a>
-  </li>
-</ul>
-
--->

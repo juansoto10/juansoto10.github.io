@@ -11,15 +11,26 @@ const footer = document.querySelector('.footer');
 const page = document.querySelector('.page');
 const contactButton = document.querySelector('.button-contact');
 const projectsButton = document.querySelector('.button-projects');
+const scrollUp = document.querySelector('#scroll-up');
 
 openMenu.addEventListener('click', openMobileMenu);
 closeMenu.addEventListener('click', openMobileMenu);
 contactButton.addEventListener('click', redirectContact);
 projectsButton.addEventListener('click', redirectProjects);
+scrollUp.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
 /* window.addEventListener('resize', displayMenu);
 window.addEventListener('load', displayMenu); */
 
 /* optAbout.addEventListener('click', redirectLink) */
+
+
+
 
 function openMobileMenu() {
   openMenu.classList.toggle('inactive');
@@ -61,13 +72,13 @@ function displayMenu() {
 
 
 function redirectContact() {
-  window.location.href='https://github.com/juansoto10';
+  window.location.href='#contact';
   // window.location.href='#contact';
   console.log('click contact');
 }
 
 function redirectProjects() {
-  window.location.href='https://www.linkedin.com/in/juan-pablo-soto/';
+  window.location.href='#projects';
   console.log('click projects');
 }
 
