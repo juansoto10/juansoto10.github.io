@@ -13,9 +13,9 @@
     
     <!-- CSS Styles -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- <link rel="stylesheet" href="./style/tablet.css" media="screen and (min-width: 600px)"> -->
-    <!-- <link rel="stylesheet" href="./style/desktop_2.css" media="screen and (min-width: 900px)"> -->
-    <!-- <link rel="stylesheet" href="./style/desktop.css" media="screen and (min-width: 1200px)"> -->
+    <link rel="stylesheet" href="./assets/css/tablet.css" media="screen and (min-width: 505px)">
+    <!-- <link rel="stylesheet" href="./style/desktop_2.css" media="screen and (min-width: 1024px)"> -->
+    <!-- <link rel="stylesheet" href="./style/desktop.css" media="screen and (min-width: 1500px)"> -->
 
     <!-- Favicons -->
     <link
@@ -60,8 +60,9 @@
       
       <!-- About section -->
       <section class="sect-about" id="about">
+          <h2 class="title">About me</h2>
           <div class="sect-about__txt-zone">
-            <h2 class="title">About me</h2>
+            
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas minima aliquam vero, expedita sit asperiores molestias illo ipsa eaque consequatur repellat sequi in optio doloremque officiis natus dicta et quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eius ipsa ipsam, natus hic consequatur recusandae alias dolorum est nihil nostrum voluptatibus eveniet possimus consectetur sunt, adipisci atque impedit? Ratione!</p>
           </div> 
           <div class="sect-about__img">
@@ -75,8 +76,8 @@
       
       <!-- Skills section -->
       <section class="sect-skills" id="skills">
+          <h2 class="title">What do I use in Tech?</h2>
           <div class="sect-skills__txt-zone">
-            <h2 class="title">What do I use in Tech?</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos optio mollitia ad animi corporis libero nemo at velit.</p>
           </div>
             
@@ -159,8 +160,8 @@
       <!-- Projects section -->
       <section class="sect-projects" id="projects">
           <!-- Text zone -->
+          <h2 class="title">My Projects</h2>
           <div class="sect-projects__txt-zone">
-            <h2 class="title">My Projects</h2>
             <p>
               A small gallery of recent projects. It's only a drop in the ocean compared to the entire list. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eos ratione voluptatem quae ipsam fugiat quidem doloremque similique, sequi ullam sit explicabo eligendi corrupti magni error, reprehenderit culpa nisi et.
             </p>
@@ -241,54 +242,59 @@
 
       <!-- Contact section -->
       <section class="sect-contact" id="contact">
+          <h2 class="title">Contact me</h2>
           <div class="sect-contact__txt-zone">
-            <h2 class="title">Contact me</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non exercitationem beatae in, nulla enim numquam incidunt quae, harum voluptates itaque adipisci quis libe.</p>
           </div>
 
-          <div class="sect-contact__form-cont">
-            <form action="https://formspree.io/f/xeqdywzr" method="POST">
-              <div class="form-control">
-                <label for="name">Name</label>
+          <div class="sect-contact__form-main-cont">
+
+            <div class="sect-contact__form-cont">
+              <form action="https://formspree.io/f/xeqdywzr" method="POST" id="form">
+                <div class="form-control">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="sender-name"
+                    placeholder="Enter your name"
+                    class="input-field"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="sender-email"
+                    placeholder="Enter your email"
+                    class="input-field"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    rows="9"
+                    placeholder="Enter a message"
+                    name="message"
+                    class="input-field"
+                    required
+                  ></textarea>
+                </div>
                 <input
-                  type="text"
-                  id="name"
-                  name="sender-name"
-                  placeholder="Enter your name"
-                  class="input-field"
-                  required
+                  type="submit"
+                  value="Send message"
+                  id="submit-btn"
+                  class="button button-send"
                 />
-              </div>
-              <div class="form-control">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="sender-email"
-                  placeholder="Enter your email"
-                  class="input-field"
-                  required
-                />
-              </div>
-              <div class="form-control">
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  rows="9"
-                  placeholder="Enter a message"
-                  name="message"
-                  class="input-field"
-                  required
-                ></textarea>
-              </div>
-              <input
-                type="submit"
-                value="Send message"
-                id="submit-btn"
-                class="button button-send"
-              />
-            </form> 
+              </form> 
+            </div>
+
           </div>
+          
               
           
           
