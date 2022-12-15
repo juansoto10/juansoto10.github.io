@@ -13,14 +13,17 @@ nav h1 a {
 .sect-home {
   margin-bottom: 0;
 }
+
 .sect-home__m-txt {
-  font-size: 5.2em;
+  font-size: 5.4em;
   line-height: 4.9rem;
   letter-spacing: 0.12rem;
 }
-.sect-home__m-txt span {
-  font-size: 5.7rem;
+.sect-home__m-txt .hs {
+  font-size: 5.9rem;
+  text-shadow:  1px 1px 20px #f6184c8a;
 }
+
 .sect-home__s-txt {
   font-size: 2rem;
 }
