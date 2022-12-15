@@ -49,12 +49,12 @@ nav h1 a {
 
 /* SECTION HOME */
 .sect-home__m-txt {
-  font-size: 7.4rem;
-  line-height: 6.8rem;
+  font-size: 8rem;
+  line-height: 7.4rem;
   letter-spacing: 0.18rem;
 }
 .sect-home__m-txt span {
-  font-size: 7.9rem;
+  font-size: 8.4rem;
   text-shadow:  1px 1px 22px #f6184c8a;
 }
 .sect-home__s-txt {
