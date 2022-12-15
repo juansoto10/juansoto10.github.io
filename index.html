@@ -14,8 +14,8 @@
     <!-- CSS Styles -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/tablet.css" media="screen and (min-width: 505px)">
-    <!-- <link rel="stylesheet" href="./style/desktop_2.css" media="screen and (min-width: 1024px)"> -->
-    <!-- <link rel="stylesheet" href="./style/desktop.css" media="screen and (min-width: 1500px)"> -->
+    <link rel="stylesheet" href="./assets/css/desktop.css" media="screen and (min-width: 1024px)">
+    <!-- <link rel="stylesheet" href="./style/desktop_2.css" media="screen and (min-width: 1600px)"> -->
 
     <!-- Favicons -->
     <link
@@ -35,10 +35,10 @@
       <nav>
         <h1><a href="index.html">JUAN SOTO</a></h1>
         <ul class="nav-links hide">
-          <li><a href="#about" class="nav-links__opt opt-about">About</a></li>
-          <li><a href="#skills" class="nav-links__opt opt-skills">Skills</a></li>
-          <li><a href="#projects" class="nav-links__opt opt-projects">Projects</a></li>
-          <li><a href="#contact" class="nav-links__opt opt-contact">Contact</a></li>
+          <li id="opt-about"><a href="#about" class="nav-links__opt">About</a></li>
+          <li id="opt-skills"><a href="#skills" class="nav-links__opt">Skills</a></li>
+          <li id="opt-projects"><a href="#projects" class="nav-links__opt">Projects</a></li>
+          <li id="opt-contact"><a href="#contact" class="nav-links__opt">Contact</a></li>
         </ul>
         <div class="mbtn mbtn-op">
           <img class="" src="../assets/icons/menu.svg" alt="menu icon">
@@ -52,7 +52,9 @@
       <!-- Home section -->
       <section class="sect-home" id="home">
           <div class="sect-home__txt-zone">
-            <h1 class="sect-home__m-txt">Hey!<br>I'm <span>Juan</span>,<br>Web Developer</h1>
+            <h2 class="sect-home__m-txt">
+              Hey!<br>I'm <span class="home-span">J</span><span class="home-span">u</span><span class="home-span">a</span><span class="home-span">n</span>,<br>Web Developer
+            </h2>
             <p class="sect-home__s-txt">Front-end / Back-end</p>
             <button class="button button-contact">Contact me</button>
           </div>

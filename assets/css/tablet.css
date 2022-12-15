@@ -2,6 +2,9 @@
 nav h1 a {
   font-size: 3.8rem;
 }
+.nav-links {
+  height: 30vh;
+}
 
 /* BUTTONS OPEN AND CLOSE MENU */
 
@@ -12,11 +15,11 @@ nav h1 a {
 }
 .sect-home__m-txt {
   font-size: 5.2em;
-  line-height: 4.4rem;
+  line-height: 4.9rem;
   letter-spacing: 0.12rem;
 }
 .sect-home__m-txt span {
-  font-size: 5.5rem;
+  font-size: 5.7rem;
 }
 .sect-home__s-txt {
   font-size: 2rem;
@@ -56,6 +59,7 @@ nav h1 a {
 .sect-about__img {
   width: 32%;
   margin-left: 20px;
+  padding-left: 15px;
 }
 .sect-about img {
   width: 100%;
@@ -71,9 +75,6 @@ nav h1 a {
   margin-bottom: 0;
   margin-bottom: 90px;
 }
-/* .sect-skills__txt-zone{
-  margin-bottom: 40px;
-} */
 .sect-skills__txt-zone p {
   margin-bottom: 40px;
   font-size: 1.6rem;
@@ -86,8 +87,8 @@ nav h1 a {
   width: 82%;
 }
 .sect-skills__list img {
-  width: 48px;
-  height: 48px;
+  width: 65px;
+  height: 65px;
 }
 .sect-skills__list span {
   font-size: 1.5rem;
@@ -116,22 +117,22 @@ nav h1 a {
   height: 26vw;
   max-height: 240px;
 }
-/* .project img {
-  height: 74%;
-} */
-/* .project__info {
-  height: 30%;
-  min-height: 54px;
-  max-height: 62px;
-} */
-.project__tools span {
-  padding: 0 4px;
+.project img {
+  height: calc(100% - 60px);
 }
-
+.project__info {
+  height: 60px;
+}
+.project__title {
+  font-size: 1.4rem;
+}
+.project__tools span {
+  font-size: 1.3rem;
+}
 
 /* SECTION CONTACT */
 .sect-contact {
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 .sect-contact__txt-zone {
   padding: 0;
@@ -170,7 +171,6 @@ nav h1 a {
   width: 24px;
   height: 24px;
   margin-bottom: 14px;
-  animation: scale 2s infinite ease-in-out;
 }
 
 
@@ -189,7 +189,7 @@ nav h1 a {
 /* SECTION FOOTER */
 .footer__content {
   padding-bottom: 0;
-  min-height: 200px;
+  min-height: 185px;
   margin-bottom: 20px;
 }
 .footer__text {
