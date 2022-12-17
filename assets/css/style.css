@@ -1,6 +1,4 @@
-/* /mnt/c/Users/juanp/Documents/JP/portfolio/assets */
-
-:root{
+:root {
   --header-font: 'Pridi', serif;
 	--title-font:'Pridi', serif;
 	--main-font:'Open Sans', sans-serif;
@@ -71,52 +69,6 @@ nav a {
   text-decoration: none;
 }
 
-@keyframes jumping-text {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 1;
-		transform: translateY(-45px);
-	}
-
-	24% {
-		opacity: 1;
-	}
-
-	40% {
-		animation-timing-function: ease-in;
-		transform: translateY(-24px);
-	}
-
-	65% {
-		animation-timing-function: ease-in;
-		transform: translateY(-12px);
-	}
-
-	82% {
-		animation-timing-function: ease-in;
-		transform: translateY(-6px);
-	}
-
-	93% {
-		animation-timing-function: ease-in;
-		transform: translateY(-4px);
-	}
-
-	25%,
-	55%,
-	75%,
-	87% {
-		animation-timing-function: ease-out;
-		transform: translateY(0px);
-	}
-
-	100% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateY(0px);
-	}
-}
-
 nav h1 a {
   font-family: var(--header-font);
   font-size: 3rem;
@@ -125,8 +77,8 @@ nav h1 a {
   color: var(--red);
   text-shadow:  1px 1px 16px #f6184c8a;
 }
-nav h1:hover {
-  animation: letters-anim 1s ease 0s 1 normal forwards;
+nav h1 a:active {
+  color: var(--light-green);
 }
 .nav-links {
   position: absolute;
@@ -185,7 +137,6 @@ nav h1:hover {
   height: 32px;
   background-color: rgba(7, 12, 10, 0.485);
   box-shadow: 0px 0px 6px 0px var(--light-green);
-  transition: 0.8s;
 }
 .mbtn-op img {
   width: 23px;
@@ -196,9 +147,8 @@ nav h1:hover {
   height: 28px;
 }
 
-.mbtn:hover {
-  transform: scale(1.08);
-  transition: 0.8s;
+.mbtn:active {
+  transform: scale(0.85);
 }
 
 
@@ -208,9 +158,9 @@ nav h1:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8vh;
+  margin-bottom: 4vh;
   min-width: 280px;
-  height: calc(100vh - 64px);
+  height: 100vh;
   text-align: left;
   padding-left: 10px;
 }
@@ -292,22 +242,18 @@ nav h1:hover {
   background-color: var(--sec-black);
   font-family: var(--main-font);
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2rem;
   color: var(--red);
   box-shadow: 1px 1px 7px 0px var(--light-green), -1px -1px 7px 0px var(--light-green);
   cursor: pointer;
-  border-radius: 10px;
-  transition: background-color 0.4s ease-in-out;
-  transition: 0.7s;
+  border-radius: 12px;
   transform: scale(1);
 }
-.button:hover {
+.button:active {
   background-color: var(--red);
   color: var(--white);
   border-color: var(--sec-black);
-  transform: scale(1.05);
-  transition: 0.7s;
 }
 
 /* TITLES */
@@ -325,27 +271,6 @@ nav h1:hover {
   cursor: pointer;
 }
 
-@keyframes color-change {
-  0% {
-    color: var(--red);
-  }
-  25% {
-    color: #ff3c698a;
-  }
-  50% {
-    color: var(--light-green);
-  }
-  75% {
-    color: var(--white);
-  }
-  100% {
-    color: var(--red);
-  }
-}
-
-.title:hover {
-  animation: color-change 2.8s linear infinite;
-}
 
 /* SECTION ABOUT */
 .sect-about {
@@ -378,17 +303,14 @@ nav h1:hover {
 }
 
 .sect-about__img img {
-  width: 217px;
-  height: 222px;
+  width: 213px;
+  height: 218px;
   margin-bottom: 42px;
   border-radius: 24px;
   align-self: left;
   box-shadow: 0px 0px 2px 1px var(--light-green);
-  transition: 0.5s;
 }
-.sect-about__img img:hover{
-  transform: scale(1.06);
-}
+
 
 /* SECT SKILLS */
 .sect-skills {
@@ -518,10 +440,6 @@ nav h1:hover {
   margin-bottom: 25px;
   background-color: var(--sec-black);
   box-shadow: 0px 0px 3px 1px var(--light-green);
-  transition: 0.5s;
-}
-.project:hover {
-  transform: scale(1.04);
 }
 .project img {
   width: 100%;
@@ -580,8 +498,6 @@ nav h1:hover {
 .button-projects {
   align-self: flex-start;
 }
-
-/* Project tools mod */
 
 
 /* SECTION CONTACT */
@@ -734,13 +650,12 @@ nav h1:hover {
   text-decoration: none;
   color: var(--red);
   text-shadow:  1px 1px 8px #f6184c8a;
-  transition: 0.4s;
 }
 
-.footer__author span:hover {
+.footer__author span:active {
   color: var(--light-green);
 }
-.footer__author a:hover {
+.footer__author a:active {
   color: var(--light-green);
 }
 
@@ -772,11 +687,6 @@ nav h1:hover {
   animation: scale 2s infinite ease-in-out;
 }
 
-.social-links img:hover {
-  animation: none;
-  transform: scale(1.3);
-}
-
 
 /* ARROW UP */
 
@@ -802,103 +712,4 @@ nav h1:hover {
 .arrow-up {
   width: 34px;
   height: 34px;
-  transition: 0.5s;
 }
-.arrow-up:hover {
-  transform: scale(1.25);
-}
-
-
-/* SECTION BLOG */
-/* .sect-blog {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-width: 280px;
-  text-align: center;
-  margin-bottom: 12vh;
-}
-.sect-blog__title {
-  margin-bottom: 15px;
-  width: 80%;
-  text-align: left;
-}
-.sect-blog__articles {
-  width: 81%;
-  display: grid;
-  grid-template-columns: auto;
-  gap: 50px;
-  padding-right: 16px;
-}
-.post__article {
-  height: 260px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-top: 1px solid #f6184c;
-  font-family: var(--sec-font);
-  box-shadow: 1px 2px 5px 3px #232222e3;
-}
-.post-content {
-  padding: 15px;
-}
-.post-content h4 {
-  padding-top: 15px;
-  font-size: 1.4rem;
-  font-weight: 300;
-  letter-spacing: 0.2rem;
-  color: var(--red);
-}
-.post-content h5 {
-  font-size: 2.2rem;
-  padding: 15px 15px 0;
-}
-.post-content h5 a {
-  text-decoration: none;
-  color: var(--main-white);
-}
-
-.post-content p {
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 15px;
-  font-family: var(--sec-font);
-  color: rgb(160, 158, 158);
-}
-
-.sect-blog__see-more {
-  margin: 40px 0 15px;
-  align-self: center;
-}
-.sect-blog__see-more a {
-  text-decoration: none;
-  font-family: var(--sec-font);
-  font-size: 1.6rem;
-  color: var(--red);
-} */
-
-/* SECT CONTACT MAP */
-
-/* .sect-contact .map {
-  width: 100%;
-  height: 41%;
-  background: var(--light-green);
-  border-radius: 4px;
-  box-shadow: 0 0 8px 0 var(--red);
-}
-.sect-contact .map iframe {
-  width: 100%;
-  height: 100%;
-  opacity: 0.45;
-  border-radius: 4px;
-}
-.sect-contact .map span {
-  display: inline-block;
-  font-size: 1.2rem;
-  font-family: var(--sec-font);
-  margin-top: 8px;
-  color: var(--light-green);
-} */

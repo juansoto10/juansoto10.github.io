@@ -1,0 +1,12 @@
+/* SECTION HOME */
+.sect-home__m-txt {
+  font-size: 2.8rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.1rem;
+}
+.sect-home__m-txt .hs {
+  font-size: 3.1rem;
+}
+.sect-home__s-txt {
+  font-size: 1.5rem;
+}

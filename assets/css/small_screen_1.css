@@ -1,0 +1,20 @@
+/* SECTION HOME */
+.sect-home__m-txt {
+  font-size: 3.5rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.11rem;
+}
+.sect-home__m-txt .hs {
+  font-size: 3.8rem;
+}
+.sect-home__s-txt {
+  font-size: 1.5rem;
+}
+
+
+.button {
+  margin: 30px 2px 10px;
+  width: 170px;
+  height: 4rem;
+  letter-spacing: 0.2rem;
+}
