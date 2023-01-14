@@ -1,6 +1,6 @@
 /* NAV-BAR */
 nav h1 a {
-  font-size: 3.8rem;
+  font-size: 4.6rem;
 }
 .nav-links {
   height: 30vh;
@@ -58,6 +58,10 @@ nav h1 a {
   font-size: 1.6rem;
   margin: 0 25px 0 0;
 }  
+#sect-about__link {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
 
 .sect-about__img {
   width: 32%;

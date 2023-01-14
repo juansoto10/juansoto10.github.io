@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Pridi:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- CSS Styles -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -34,7 +37,7 @@
     <main class="page-inner">
       <!-- Navbar -->
       <nav>
-        <h1><a href="index.html">JUAN SOTO</a></h1>
+        <h1><a href="index.html">Juan Soto</a></h1>
         <ul class="nav-links hide">
           <li id="opt-about"><a href="#about" class="nav-links__opt">About</a></li>
           <li id="opt-skills"><a href="#skills" class="nav-links__opt">Skills</a></li>
@@ -48,7 +51,6 @@
           <img class="" src="../assets/icons/close_menu.svg" alt="close menu icon">
         </div>
       </nav>
-
       
       <!-- Home section -->
       <section class="sect-home" id="home">
@@ -61,18 +63,31 @@
               <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
             </div>
             <p class="sect-home__s-txt">Front-end / Back-end</p>
-            <button class="button button-contact">Contact me</button>
+            <button class="button button-contact">Get in touch</button>
           </div>
       </section>
       
       <!-- About section -->
       <section class="sect-about" id="about">
           <h2 class="title">About me</h2>
-          <div class="sect-about__txt-zone">
-            
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas minima aliquam vero, expedita sit asperiores molestias illo ipsa eaque consequatur repellat sequi in optio doloremque officiis natus dicta et quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eius ipsa ipsam, natus hic consequatur recusandae alias dolorum est nihil nostrum voluptatibus eveniet possimus consectetur sunt, adipisci atque impedit? Ratione!</p>
+          <div class="sect-about__txt-zone"> 
+            <p>
+              I am a web developer passionate about the world of technology and everything that involves. I work with different front-end and back-end technologies, which allows me today to be able to develop applications and solutions to their full extent.
+            </p><br>
+            <p>
+              A year ago I discovered this world, despite having been in contact with it for so long, I was not aware of the opportunity that I had in front of me. I was greatly impressed by all the incredible things and solutions that can be done with code, as well as the vast amount of technologies that can be learned in this niche. Since then I began a learning journey that has led me to this moment and continues to fill me with beautiful experiences and knowledge. <br><br>
+
+              Before becoming a developer, I worked as a civil engineer, which I did for a year until I discovered the wonder of code.
+            </p><br>
+            <p>
+              I'm an organized person, with attention to detail, self-taught and very curious. In my spare time I like to do several things, including listening to music, exercising, reading and learning something new every day, watching TV series, playing video games, surfing the internet and one of my favorite hobbies, which is learning languages using different applications and strategies.
+            </p><br>
+            <p>
+              At this moment I'm looking for a job opportunity in the tech to be able to contribute with my knowledge and skills to the creation of solutions for companies and clients in this sector.
+            </p><br>
+            <a href="#contact" id="sect-about__link">Let's make something interesting!</a>
           </div> 
-          <div class="sect-about__img">
+          <div class="sect-about__img" data-aos="zoom-in-up">
             <img 
               src="./assets/images/jpsoto_photo_v2.png" 
               alt="juan pablo soto, full stack developer" 
@@ -85,11 +100,13 @@
       <section class="sect-skills" id="skills">
           <h2 class="title">What do I use in Tech?</h2>
           <div class="sect-skills__txt-zone">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos optio mollitia ad animi corporis libero nemo at velit.</p>
+            <p>
+              These are the languages and technologies that I use at the moment, with which I have developed my first projects. I am currently learning ReactJS and MongoDB.
+            </p>
           </div>
             
           <ul class="sect-skills__list">
-            <li>
+            <li data-aos="zoom-in-up">
               <img 
                 src="./assets/icons/python.svg" 
                 alt="python"
@@ -97,7 +114,7 @@
               >
               <span>Python</span> 
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <img 
                 src="./assets/icons/django_icon.svg" 
                 alt="django"
@@ -105,15 +122,15 @@
               >
               <span>Django</span> 
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <img 
-                src="./assets/icons/mysql-icon.svg" 
-                alt="SQL"
+                src="./assets/icons/postgresql-icon.svg" 
+                alt="PostgreSQL"
                 loading="lazy"
               >
-              <span>MySQL</span>
+              <span>PostgreSQL</span>
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <img 
                 src="./assets/icons/javascript.svg" 
                 alt="JavaScript"
@@ -121,7 +138,7 @@
               >
               <span>JavaScript</span> 
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <img 
                 src="./assets/icons/html-5.svg" 
                 alt="html"
@@ -129,7 +146,7 @@
               >
               <span>HTML5</span> 
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <img 
                 src="./assets/icons/css-3.svg" 
                 alt="css"
@@ -137,15 +154,7 @@
               >
               <span>CSS3</span> 
             </li>
-            <li>
-              <img 
-                src="./assets/icons/react.svg" 
-                alt="react"
-                loading="lazy"
-              >
-              <span>React.js</span> 
-            </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <img 
                 src="./assets/icons/git-icon.svg" 
                 alt="git"
@@ -153,7 +162,7 @@
               >
               <span>Git</span> 
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <img 
                 src="./assets/icons/linux-tux.svg" 
                 alt="linux"
@@ -170,13 +179,13 @@
           <h2 class="title">My Projects</h2>
           <div class="sect-projects__txt-zone">
             <p>
-              A small gallery of recent projects. It's only a drop in the ocean compared to the entire list. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eos ratione voluptatem quae ipsam fugiat quidem doloremque similique, sequi ullam sit explicabo eligendi corrupti magni error, reprehenderit culpa nisi et.
+              A small gallery of recent projects, built along my learning path. You can also see the code in my <a href="https://github.com/juansoto10" target="_blank">Github profile</a> .
             </p>
           </div>
 
           <!-- Projects wall -->
           <div class="sect-projects__wall">
-            <!-- <div class="project">
+            <div class="project" data-aos="fade-up">
               <img 
                 src="./assets/images/the_mined_path_game.png" 
                 alt=""
@@ -192,7 +201,7 @@
               </div>
             </div>
   
-            <div class="project">
+            <div class="project" data-aos="fade-up">
               <img 
                 src="./assets/images/the_mined_path_game.png" 
                 alt=""
@@ -208,7 +217,7 @@
               </div>
             </div>
   
-            <div class="project">
+            <div class="project" data-aos="fade-up">
               <img 
                 src="./assets/images/the_mined_path_game.png" 
                 alt=""
@@ -224,7 +233,7 @@
               </div>
             </div>
   
-            <div class="project">
+            <div class="project" data-aos="fade-up">
               <img 
                 src="./assets/images/the_mined_path_game.png" 
                 alt=""
@@ -238,7 +247,7 @@
                   <span>JavaScript</span>
                 </p>
               </div>
-            </div> -->
+            </div>
           </div>
 
           <!-- Button see more projects -->
@@ -251,12 +260,14 @@
       <section class="sect-contact" id="contact">
           <h2 class="title">Contact me</h2>
           <div class="sect-contact__txt-zone">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non exercitationem beatae in, nulla enim numquam incidunt quae, harum voluptates itaque adipisci quis libe.</p>
+            <p>
+              If you like my work and want to talk with me, don't hesitate to use the form. You can also contact me through my social networks: LinkedIN, Instagram or Twitter.
+            </p>
           </div>
 
           <div class="sect-contact__form-main-cont">
 
-            <div class="sect-contact__form-cont">
+            <div class="sect-contact__form-cont" data-aos="zoom-in-up">
               <form action="https://formspree.io/f/xeqdywzr" method="POST" id="form">
                 <div class="form-control">
                   <label for="name">Name</label>
@@ -375,11 +386,16 @@
       </footer>
     </main> 
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+
     <!-- Website scripts -->
     <script src="./assets/js/main.js"></script>   
-
-    <!-- Ion icon scripts -->
-
-
   </body>
 </html>

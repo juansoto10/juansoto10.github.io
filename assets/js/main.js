@@ -128,9 +128,10 @@ async function getTags() {
   }
 }
 
-getTags();
+/* getTags(); */
 console.log('Mira tus tags');
 console.log(tags);
+
 
 async function renderProjects() {
   const res = await fetch(`${API_URL}/projects/`, {
@@ -209,4 +210,4 @@ async function renderProjects() {
   }
 }
 
-renderProjects()
+/* renderProjects() */
