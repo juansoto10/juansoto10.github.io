@@ -71,7 +71,8 @@ nav a {
 
 nav h1 a {
   font-family: var(--header-font);
-  font-size: 4.2rem;
+  font-size: 3.9rem;
+  line-height: 3.5rem;
   font-weight: 800;
   letter-spacing: 0.11rem;
   color: var(--red);
@@ -310,7 +311,7 @@ nav h1 a:active {
 
 .sect-about__img img {
   width: 160px;
-  height: 16px;
+  height: 164px;
   margin-bottom: 42px;
   border-radius: 24px;
   align-self: left;
