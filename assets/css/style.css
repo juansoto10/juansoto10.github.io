@@ -175,7 +175,7 @@ nav h1 a:active {
   font-weight: 700;
   line-height: 3.8rem;
   letter-spacing: 0.1rem;
-  margin-bottom: 27px;
+  margin-bottom: 32px;
   
 }
 .sect-home__m-txt span {
@@ -225,12 +225,26 @@ nav h1 a:active {
   animation: letters-anim 1.2s ease 0s 1 normal forwards;
 }
 
-
 .sect-home__s-txt {
-  font-size: 1.6rem;
+  padding-bottom: 16px;
+  width: 192px;
+}
+.sect-home__s-txt a {
+  position: relative;
+  display: flex;
+  font-size: 1.5rem;
   font-weight: 300;
-  letter-spacing: 0.2rem;
-  margin-bottom: 25px;
+  letter-spacing: 0.18rem;
+  text-decoration: none;
+  color: var(--red);
+  padding-bottom: 8px;
+}
+.sect-home__s-txt a span {
+  margin-left: 10px;
+}
+.sect-home__s-txt img {
+  width: auto;
+  height: 23px;
 }
 
 /* MAIN BUTTONS */
@@ -458,16 +472,16 @@ nav h1 a:active {
 }
 .project__tools span {
   display: inline-flex;
-  line-height: 1.5rem;
+  /* line-height: 1.5rem;
   font-weight: 300;
-  background-color: #f6184c7a;
-  margin-right: 10px;
+  background-color: #f6184c7a; */
+  margin-right: 8px;
   padding: 0 4px 6px;
-  height: 78%;
-  border-radius: 6px;
+  /* height: 78%; */
+  /* border-radius: 6px;
   color: var(--white);
   font-size: 1.2rem;
-  box-shadow: 0px 0px 8px 1px #f6184c;
+  box-shadow: 0px 0px 8px 1px #f6184c; */
 }
 .project__button {
   width: 82%;

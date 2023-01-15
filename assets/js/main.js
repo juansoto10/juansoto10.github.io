@@ -101,6 +101,16 @@ function redirectProjects() {
 </div> */
 const tags = [];
 
+const tags_images = {
+  'HTML5': '../icons/html-5.svg',
+  'CSS3': '../icons/css-3.svg',
+  'JavaScript': '../icons/javascript.svg',
+  'Python': '../icons/python.svg',
+  'Django': '../icons/django_icon.svg',
+  'PostgreSQL': '../icons/postgresql-icon.svg',
+  'ReactJS': '../icons/react.svg',
+}
+
 async function getTags() {
   const res = await fetch(`${API_URL}/tags/`, {
     method: 'GET',

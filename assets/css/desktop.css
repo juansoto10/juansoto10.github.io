@@ -74,14 +74,36 @@ nav h1:hover {
   font-size: 7.8rem;
   line-height: 7.3rem;
   letter-spacing: 0.16rem;
+  margin-bottom: 45px;
 }
 .sect-home__m-txt .hs {
   font-size: 8.2rem;
   text-shadow:  1px 1px 22px #f6184c8a;
 }
-.sect-home__s-txt {
-  font-size: 2.2rem;
+
+.sect-home__s-txt a {
+  font-size: 2rem;
+  letter-spacing: 0.24rem;
+  transition: 0.4s;
 }
+.sect-home__s-txt a span {
+  margin-left: 13px;
+}
+.sect-home__s-txt img {
+  width: auto;
+  height: 28px;
+  transition: 0.4s;
+  transform: scale(1);
+}
+.sect-home__s-txt a:hover {
+  color: #FFFFFF;
+  transition: 0.4s;
+}
+.sect-home__s-txt img:hover {
+  transition: 0.4s;
+  transform: scale(1.15);
+}
+
 
 
 /* MAIN BUTTONS */
@@ -243,6 +265,14 @@ nav h1:hover {
 }
 .project__tools span {
   font-size: 1.4rem;
+}
+.project__tools {
+  margin-top: 7px;
+}
+.project__tools span img {
+  height: 24px;
+  width: auto;
+  border-radius: 0;
 }
 
 

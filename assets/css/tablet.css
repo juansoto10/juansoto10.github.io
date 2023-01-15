@@ -18,14 +18,25 @@ nav h1 a {
   font-size: 5.4em;
   line-height: 4.9rem;
   letter-spacing: 0.12rem;
+  margin-bottom: 38px;
 }
 .sect-home__m-txt .hs {
   font-size: 5.9rem;
   text-shadow:  1px 1px 20px #f6184c8a;
 }
 
-.sect-home__s-txt {
-  font-size: 2rem;
+
+.sect-home__s-txt a {
+  font-size: 1.8rem;
+  letter-spacing: 0.22rem;
+  text-shadow:  2px 2px 5px #f6184c8a;
+}
+.sect-home__s-txt a span {
+  margin-left: 10px;
+}
+.sect-home__s-txt img {
+  width: auto;
+  height: 25px;
 }
 
 
