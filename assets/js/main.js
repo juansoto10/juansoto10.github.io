@@ -33,6 +33,53 @@ scrollUp.addEventListener('click', () => {
 window.addEventListener('resize', displayMenu);
 window.addEventListener('load', displayMenu);
 
+/* const bodyTag = document.getElementsByTagName('body');
+const navLinksId = document.getElementById('nav-menu'); */
+
+/* document.addEventListener('click', e => {
+  if (navLinks.classList.contains('switched')) {
+    if (
+      e.target != navLinks
+      && !navLinks.contains(e.target)
+      && e.target != openMenu
+      && e.target != closeMenu
+    ) {
+      openMenu.classList.remove('inactive');
+      closeMenu.classList.add('inactive');
+      navLinks.classList.remove('switched');
+      navLinks.classList.add('hide');
+    }
+  }
+}) */
+
+/* function clickedOrNot(e) {
+  if (e.target !== navLinksId) {
+    openMenu.classList.remove('inactive');
+    closeMenu.classList.add('inactive');
+    navLinks.classList.remove('switched');
+    navLinks.classList.add('hide');
+
+    /* bodyTag[0].removeEventListener('click', clickedOrNot, true);
+  }
+}
+
+bodyTag.addEventListener('click', clickedOrNot);
+ */
+
+/* document.addEventListener('click', function(event) {
+  const clickInside = navLinks.contains(event.target);
+
+  if (navLinks.classList.contains('switched')) {
+    if (!clickInside) {
+      openMenu.classList.remove('inactive');
+      closeMenu.classList.add('inactive');
+      navLinks.classList.remove('switched');
+      navLinks.classList.add('hide');
+    }
+  }
+  
+}); */
+
 /* optAbout.addEventListener('click', redirectLink) */
 
 function openMobileMenu() {
@@ -48,6 +95,7 @@ function openMobileMenu() {
     navLinks.classList.add('hide');
   }
 }
+ 
 
 function displayMenu() {
   console.log('resize or load')
@@ -65,7 +113,6 @@ function displayMenu() {
   }
 } 
 
-
 function redirectContact() {
   window.location.href='#contact';
   console.log('click contact');
@@ -76,6 +123,15 @@ function redirectProjects() {
   console.log('click projects');
 }
 
+
+/* function hideMenu() {
+  openMenu.classList.toggle('inactive');
+  if (navLinks.classList.contains('switched')) {
+    closeMenu.classList.add('inactive');
+    navLinks.classList.remove('switched');
+    navLinks.classList.add('hide');
+  }
+} */
 /* function redirectAbout() { 
   window.location.href='https://';
 } 
@@ -84,7 +140,7 @@ function redirectProjects() {
 // Fetching Projects info:
 
 /* <div class="sect-projects__wall">
-<div class="project">
+<div class="project" data-aos="fade-up">
   <img 
     src="./assets/images/the_mined_path_game.png" 
     alt=""
@@ -101,14 +157,14 @@ function redirectProjects() {
 </div> */
 const tags = [];
 
-const tags_images = {
-  'HTML5': '../icons/html-5.svg',
-  'CSS3': '../icons/css-3.svg',
-  'JavaScript': '../icons/javascript.svg',
-  'Python': '../icons/python.svg',
-  'Django': '../icons/django_icon.svg',
-  'PostgreSQL': '../icons/postgresql-icon.svg',
-  'ReactJS': '../icons/react.svg',
+const tagsImages = {
+  'HTML5': 'assets/icons/html5.svg',
+  'CSS3': 'assets/icons/css3.svg',
+  'JavaScript': 'assets/icons/javascript.svg',
+  'Python': 'assets/icons/python.svg',
+  'Django': 'assets/icons/django_icon.svg',
+  'PostgreSQL': 'assets/icons/postgresql-icon.svg',
+  'ReactJS': 'assets/icons/react.svg',
 }
 
 async function getTags() {
@@ -170,6 +226,7 @@ async function renderProjects() {
     projectsList.forEach(project => {
       const projectDiv = document.createElement('div');
       projectDiv.classList.add('project');
+      projectDiv.setAttribute('data-aos', 'fade-up');
 
       const img = document.createElement('img');
       img.src = project.image_url;
@@ -201,8 +258,14 @@ async function renderProjects() {
           }
         })
 
-        const spanText = document.createTextNode(tagName);
-        tagSpan.append(spanText);
+        /* const spanText = document.createTextNode(tagName); */
+        const img = document.createElement('img');
+        const imgSrc = tagsImages[tagName];
+        img.src = imgSrc;
+        img.alt = tagName;
+        img.loading = "lazy";
+
+        tagSpan.append(img);
 
         projectTools.append(tagSpan);
       })
@@ -212,7 +275,12 @@ async function renderProjects() {
       // Add all the project information in the project div (<div class="project">)
       projectDiv.append(img, projectInfo);
 
-      // Push each project into toRender array
+      url = 'https://michalsnik.github.io/aos/';
+      projectDiv.onclick = function() {
+        window.open(url);
+      };
+
+      // Push each project into `toRender` array
       toRender.push(projectDiv);
     })
 
