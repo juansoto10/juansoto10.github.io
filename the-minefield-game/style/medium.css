@@ -1,0 +1,153 @@
+
+/* ******************** */
+.game-cont {
+  height: auto;
+}
+
+
+/* HEADER */
+/* header, .game__text, .game__btns {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+} */
+
+/* ********************* */
+header {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px 100px 20px;;
+}
+
+/* .game__text {
+  width: 100%;
+} */
+
+/* ********************* */
+.game__text h1 {
+  font-size: 3.4rem;
+  line-height: 5rem;
+  margin-bottom: 50px;
+}
+.game__text p {
+  margin-bottom: 45px;
+  font-size: 2.4rem;
+} 
+
+
+/* CANVAS CONTAINER */
+
+/* ********************** */
+.canvas-cont {
+  width: 70vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* canvas {
+  border: 3px solid #211522;
+  border-radius: 50px;
+  box-shadow: 0px 0px 9px 7px #613659;
+  background-image: url(../images/imgs/textura2.jpg);
+  margin: 35px 0 35px;
+}
+*/
+
+.messages {
+  width: 100%;
+  max-width: 200px;
+}
+/*  */
+.messages p {
+  line-height: 2.6rem;
+  width: 30rem;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+.messages p #lives {
+  font-size: 2.4rem;
+} 
+
+
+/* BUTTONS */
+
+/* ************************ */
+.btns {
+  width: 30vw;
+  height: 100vh;
+  padding: 30px 15px 30px 15px;
+}
+
+button {
+  background-color:#C197D2;
+  color: #613659;
+  padding: 10px;
+  width: 18vw;
+  min-width: 126px;
+  font-size: 2rem;
+}
+
+button:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* .game__btns {
+  margin-bottom: 45px;
+} */
+.game__btns button {
+  margin: 0;
+}
+
+/* **************** */
+.move__btns {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.move__btns button {
+  height: 6.9vw;
+  width: 6.9vw;
+  min-width: 47px;
+  min-height: 47px;
+}
+.move__btns button img {
+  height: 5vw;
+  width: 5vw;
+  min-height: 40px;
+}
+
+.btns #result {
+  height: 9.5rem;
+  font-size: 1.6rem;
+  padding: 0 15px 0
+}
+
+@media(max-height: 510px) {
+  canvas {
+    border: 3px solid #211522;
+    border-radius: 50px;
+    box-shadow: 0px 0px 9px 7px #613659;
+    background-image: url(../images/imgs/textura2.jpg);
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 8px;
+  }
+  .messages {
+    width: 100%;
+    max-width: 200px;
+  }
+  .messages p {
+    line-height: 2.2rem;
+    width: 23rem;
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+  .messages p #lives {
+    font-size: 2.4rem;
+  } 
+}

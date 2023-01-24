@@ -1,0 +1,257 @@
+
+/* **************** */
+.game-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+  
+  
+/* HEADER */
+
+header, .game__text, .game__btns {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ******************** */
+header {
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.8rem;
+  padding: 20px 40px 30px 40px;
+  background-color: #C197D2;
+}
+
+.game__text {
+  width: 100%;
+}
+
+/*  *********** */
+.game__text h1 {
+  font-size: 3.4rem;
+  line-height: 4.6rem;
+  margin-bottom: 35px;
+}
+.game__text p {
+  margin-bottom: 0;
+  font-family: var(--sec-font);
+  font-size: 2.2rem;
+}
+
+
+/* CANVAS CONTAINER */
+
+/* ********************* */
+.canvas-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 77vh;
+  padding: 15px;
+}
+
+canvas {
+  margin: 10px 0 25px;
+}
+
+/* .messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+} */
+
+/* ************ */
+.messages p {
+  line-height: 2rem;
+  width: 29rem;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+.messages p #lives {
+  font-size: 1.8rem;
+}
+
+
+
+/* BUTTONS */
+
+/* *********************** */
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 23vh;
+  padding: 10px 15px 10px;
+}
+/* *********** */
+button {
+  padding: 10px 10px;
+  width: 18vw;
+  max-height: 60px;
+  font-size: 1.5rem;
+  min-width: 100px;
+}
+/* ************ */
+button:not(:last-child) {
+  margin-right: 5px;
+}
+/* ************* */
+.game__btns {
+  font-size: 1.8rem;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+/* .game__btns button {
+  margin: 0;
+} */
+
+.move__btns {
+  margin-bottom: 0;
+}
+.move__btns button {
+  height: 8.3vw;
+  width: 8.3vw;
+  min-width: 44px;
+  min-height: 44px;
+  margin-bottom: 0;
+}
+.move__btns button img {
+  height: 6.4vw;
+  width: 6.4vw;
+  min-width: 38px;
+}
+.move__btns div button {
+  margin-bottom: 5px;
+}
+
+.btns #result {
+  width: 22rem;
+  height: calc(100% - 22px);
+  font-size: 1.3rem;
+  padding: 0 12px 0
+}
+
+@media(max-width: 550px) {
+  .btns #result {
+    width: calc(100vw - 342px);
+    height: 13rem;
+    font-size: 1.3rem;
+    padding: 0 12px 0;
+  }
+}
+
+@media(max-width: 500px) {
+  button {
+    padding: 10px 10px;
+    max-height: 60px;
+    font-size: 1.3rem;
+    min-width: 80px;
+  }
+  .btns #result {
+    width: calc(100vw - 320px);
+    height: calc(100% - 22px);
+    font-size: 1.1rem;
+    padding: 0 12px 0;
+  }
+  .canvas-cont {
+    height: 72vh;
+  }
+  .btns {
+    height: 28vh;
+    padding: 10px;
+  }
+}
+
+@media(max-width: 440px) {
+  /* button {
+    padding: 10px 10px;
+    max-height: 60px;
+    font-size: 1.3rem;
+    min-width: 80px;
+  }
+  .btns #result {
+    width: calc(100vw - 320px);
+    height: calc(100% - 22px);
+    font-size: 1.1rem;
+    padding: 0 12px 0;
+  } */
+  .canvas-cont {
+    height: 69vh;
+  } 
+  .btns {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px 15px 20px;
+  }
+  .game__btns {
+    width: 50vw;
+    margin-bottom: 15px;
+  }
+  
+  .move__btns {
+    margin-bottom: 0;
+    width: 50vw;
+    margin-bottom: 15px;
+  }
+
+  .btns #result {
+    width: calc(100vw - 30px);
+    height: 160px;
+    font-size: 1.1rem;
+    padding: 20px 0 10;
+  }
+}
+
+@media(max-width: 360px) {
+  .game__text h1 {
+    font-size: 2.9rem;
+    line-height: 3.8rem;
+    margin-bottom: 26px;
+  }
+  .game__text p {
+    font-size: 2rem;
+  }
+
+  /* canvas {
+    border: 3px solid #211522;
+    border-radius: 50px;
+    box-shadow: 0px 0px 9px 7px #613659;
+    background-image: url(../images/imgs/textura2.jpg);
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 8px;
+  } */
+  /* .messages {
+    width: 100%;
+    max-width: 200px;
+  }
+  .messages p {
+    line-height: 2.2rem;
+    width: 23rem;
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+  .messages p #lives {
+    font-size: 2.4rem;
+  }  */
+}
+
+
+
