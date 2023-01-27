@@ -47,6 +47,14 @@ document.addEventListener('mouseup', function(event) {
   }
 });
 
+// Scroll close
+document.addEventListener('scrollend', (event) => {
+  if (!closeMenu.classList.contains('inactive')) {
+    closeMenu.classList.add('inactive');
+    openMenu.classList.remove('inactive');
+  }
+});
+
 /* const bodyTag = document.getElementsByTagName('body');
 const navLinksId = document.getElementById('nav-menu'); */
 
