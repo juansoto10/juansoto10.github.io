@@ -14,8 +14,9 @@ const contactButton = document.querySelector('.button-contact');
 const projectsButton = document.querySelector('.button-projects');
 const scrollUp = document.querySelector('#scroll-up');
 
+
 // API
-const API_URL = 'http://127.0.0.1:8000/'
+const API_URL = 'http://127.0.0.1:8000/';
 
 openMenu.addEventListener('click', openMobileMenu);
 closeMenu.addEventListener('click', openMobileMenu);
@@ -29,9 +30,22 @@ scrollUp.addEventListener('click', () => {
   });
 });
 
-/* Resize and load events */
+// Resize and load events
 window.addEventListener('resize', displayMenu);
 window.addEventListener('load', displayMenu);
+
+// Close menu
+document.addEventListener('mouseup', function(event) {
+  const navMenu= document.getElementById('nav-menu');
+  if (!navMenu.contains(event.target) && !closeMenu.contains(event.target)) {
+    if (navLinks.classList.contains('switched')) {
+      closeMenu.classList.add('inactive');
+      openMenu.classList.remove('inactive');
+      navLinks.classList.remove('switched');
+      navLinks.classList.add('hide');
+    }
+  }
+});
 
 /* const bodyTag = document.getElementsByTagName('body');
 const navLinksId = document.getElementById('nav-menu'); */
@@ -155,6 +169,7 @@ function redirectProjects() {
     </p>
   </div>
 </div> */
+
 const tags = [];
 
 const tagsImages = {
