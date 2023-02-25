@@ -262,7 +262,7 @@ nav h1 a:active {
 }
 .project.aos-init.aos-animate {
   min-height: 140px;
-  width: 24vw;
+  width: 25vw;
   height: 20vw;
   max-height: 285px;
   max-width: 450px;
@@ -270,7 +270,7 @@ nav h1 a:active {
   transform: scale(1);
 }
 .project.aos-init.aos-animate:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
 .project img {

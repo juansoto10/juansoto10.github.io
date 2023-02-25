@@ -1,5 +1,4 @@
 :root {
-  --header-font: 'Pridi', serif;
 	--title-font:'Pridi', serif;
 	--main-font:'Open Sans', sans-serif;
   --main-black: #1d1d1d;
@@ -67,20 +66,15 @@ nav {
 }
 nav a {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav a img {
+  width:46px;
 }
 
-nav h1 a {
-  font-family: var(--header-font);
-  font-size: 3.9rem;
-  line-height: 3.5rem;
-  font-weight: 800;
-  letter-spacing: 0.11rem;
-  color: var(--red);
-  text-shadow:  1px 1px 16px #f6184c8a;
-}
-nav h1 a:active {
-  color: var(--light-green);
-}
+
 .nav-links {
   position: absolute;
   top: 75px;
@@ -112,7 +106,7 @@ nav h1 a:active {
 }
 .nav-links li a {
   width: 100%;
-  font-family: var(--header-font);
+  font-family: var(--title-font);
   font-size: 1.8rem;
   font-weight: 800;
   letter-spacing: 0.12rem;
@@ -617,7 +611,7 @@ nav h1 a:active {
 .footer__text {
   width: 80%;
   font-size: 1.3rem;
-  font-family: var(--sec-font);
+  font-family: var(--main-font);
   color: var(--white);
   text-align: left;
   padding:0 15px 0 13px;
@@ -630,7 +624,7 @@ nav h1 a:active {
   margin-bottom: 20px;
 }
 .footer__author p {
-  font-family: var(--title-font);
+  font-family: var(--main-font);
   font-size: 1.3rem;
 }
 .footer__author span {
