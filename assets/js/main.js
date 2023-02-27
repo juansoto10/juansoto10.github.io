@@ -16,7 +16,7 @@ const scrollUp = document.querySelector('#scroll-up');
 
 
 // API
-const API_URL = 'http://127.0.0.1:8000/';
+/* const API_URL = 'http://127.0.0.1:8000/'; */
 
 openMenu.addEventListener('click', openMobileMenu);
 closeMenu.addEventListener('click', openMobileMenu);
@@ -46,28 +46,6 @@ document.addEventListener('touchstart', function(event) {
   closeMobileMenu(event);
 });
 
-/* document.addEventListener('mouseup', function(event) {
-  if (!navMenu.contains(event.target) && !closeMenu.contains(event.target)) {
-    if (navLinks.classList.contains('switched')) {
-      closeMenu.classList.add('inactive');
-      openMenu.classList.remove('inactive');
-      navLinks.classList.remove('switched');
-      navLinks.classList.add('hide');
-    }
-  }
-});
-
-document.addEventListener('touchstart', function(event) {
-  if (!navMenu.contains(event.target) && !closeMenu.contains(event.target)) {
-    if (navLinks.classList.contains('switched')) {
-      closeMenu.classList.add('inactive');
-      openMenu.classList.remove('inactive');
-      navLinks.classList.remove('switched');
-      navLinks.classList.add('hide');
-    }
-  }
-}); */
-
 
 function closeMobileMenu(event) {
   if (!navMenu.contains(event.target) && !closeMenu.contains(event.target)) {
@@ -79,70 +57,6 @@ function closeMobileMenu(event) {
     }
   }
 }
-
-
-// Scroll close
-/* document.addEventListener('scrollend', (event) => {
-  if (!closeMenu.classList.contains('inactive')) {
-    closeMenu.classList.add('inactive');
-    openMenu.classList.remove('inactive');
-  }
-}); */
-
-// Touch Start
-/* document.addEventListener('touchstart', (event) => {
-  if (!closeMenu.classList.contains('inactive')) {
-    closeMenu.classList.add('inactive');
-    openMenu.classList.remove('inactive');
-  }
-}); */
-
-/* const bodyTag = document.getElementsByTagName('body');
-const navLinksId = document.getElementById('nav-menu'); */
-
-/* document.addEventListener('click', e => {
-  if (navLinks.classList.contains('switched')) {
-    if (
-      e.target != navLinks
-      && !navLinks.contains(e.target)
-      && e.target != openMenu
-      && e.target != closeMenu
-    ) {
-      openMenu.classList.remove('inactive');
-      closeMenu.classList.add('inactive');
-      navLinks.classList.remove('switched');
-      navLinks.classList.add('hide');
-    }
-  }
-}) */
-
-/* function clickedOrNot(e) {
-  if (e.target !== navLinksId) {
-    openMenu.classList.remove('inactive');
-    closeMenu.classList.add('inactive');
-    navLinks.classList.remove('switched');
-    navLinks.classList.add('hide');
-
-    /* bodyTag[0].removeEventListener('click', clickedOrNot, true);
-  }
-}
-
-bodyTag.addEventListener('click', clickedOrNot);
- */
-
-/* document.addEventListener('click', function(event) {
-  const clickInside = navLinks.contains(event.target);
-
-  if (navLinks.classList.contains('switched')) {
-    if (!clickInside) {
-      openMenu.classList.remove('inactive');
-      closeMenu.classList.add('inactive');
-      navLinks.classList.remove('switched');
-      navLinks.classList.add('hide');
-    }
-  }
-  
-}); */
 
 /* optAbout.addEventListener('click', redirectLink) */
 
@@ -188,14 +102,6 @@ function redirectProjects() {
 }
 
 
-/* function hideMenu() {
-  openMenu.classList.toggle('inactive');
-  if (navLinks.classList.contains('switched')) {
-    closeMenu.classList.add('inactive');
-    navLinks.classList.remove('switched');
-    navLinks.classList.add('hide');
-  }
-} */
 /* function redirectAbout() { 
   window.location.href='https://';
 } 
@@ -223,16 +129,125 @@ function redirectProjects() {
 const tags = [];
 
 const tagsImages = {
-  'HTML5': 'assets/icons/html5.svg',
-  'CSS3': 'assets/icons/css3.svg',
-  'JavaScript': 'assets/icons/javascript.svg',
-  'Python': 'assets/icons/python.svg',
-  'Django': 'assets/icons/django_icon.svg',
-  'PostgreSQL': 'assets/icons/postgresql-icon.svg',
-  'ReactJS': 'assets/icons/react.svg',
+  HTML5: '/assets/icons/html5.svg',
+  CSS3: '/assets/icons/css3.svg',
+  JavaScript: '/assets/icons/javascript.svg',
+  Python: '/assets/icons/python.svg',
+  Django: '/assets/icons/django_icon.svg',
+  PostgreSQL: '/assets/icons/postgresql-icon.svg',
+  ReactJS: '/assets/icons/react.svg',
+  TailwindCSS: '/assets/icons/tailwind.png'
 }
 
-async function getTags() {
+const projects = {
+  countriesInfo: {
+    name: 'Countries Info Website',
+    image_url: '/assets/images/the_mined_path_game.png',
+    tags: {
+      JavaScript: '/assets/icons/javascript.svg',
+      TailwindCSS: '/assets/icons/tailwind.png',
+      HTML5: '/assets/icons/html5.svg'
+    },
+    project_url: 'https://countriesinfo-foryou.netlify.app'
+  },
+  TheMinefieldGame: {
+    name: 'The Minefield Game',
+    image_url: '/assets/images/the_mined_path_game.png',
+    tags: {
+      JavaScript: '/assets/icons/javascript.svg',
+      HTML5: '/assets/icons/html5.svg',
+      CSS3: '/assets/icons/css3.svg'
+    },
+    project_url: 'https://theminefieldgame.netlify.app'
+  },
+  RockPaperScissorsGame: {
+    name: 'Rock-Paper-Scissors Game',
+    image_url: '/assets/images/the_mined_path_game.png',
+    tags: {
+      JavaScript: '/assets/icons/javascript.svg',
+      HTML5: '/assets/icons/html5.svg',
+      CSS3: '/assets/icons/css3.svg'
+    },
+    project_url: 'https://rockpaperscissorsgame-js.netlify.app'
+  }
+}
+
+
+function renderProjects() {
+  const projectsWall = document.querySelector('.sect-projects__wall')
+  const toRender = [];
+
+  const projectsList = Object.keys(projects);
+
+  projectsList.forEach(key => {
+    const projectDiv = document.createElement('div');
+    projectDiv.classList.add('project');
+    projectDiv.setAttribute('data-aos', 'fade-up');
+
+    const img = document.createElement('img');
+    img.src = projects[key]['image_url'];
+    img.alt = projects[key]['name'];
+    img.loading = "lazy";
+
+    // Project info
+    const projectInfo = document.createElement('div');
+    projectInfo.classList.add('project__info');
+
+    const projectTitle = document.createElement('h3');
+    const projectTitleText = document.createTextNode(projects.key.name);
+    projectTitle.classList.add('project__title')
+    projectTitle.append(projectTitleText);
+
+    const projectTools = document.createElement('p');
+    projectTools.classList.add('project__tools');
+
+    const projectTags = projects[key]['tags'];
+
+    Object.keys(projectTags).forEach(tag => {
+      const tagSpan = document.createElement('span');
+
+      const tagName = tag
+      
+/*       tags.forEach(element => {
+        if (tag === element.url) {
+          tagName = element.tag_name;
+        }
+      }) */
+
+      const img = document.createElement('img');
+      const imgSrc = projectTags[tag];
+      img.src = imgSrc;
+      img.alt = tagName;
+      img.loading = "lazy";
+
+      tagSpan.append(img);
+
+      projectTools.append(tagSpan);
+    })
+
+    projectInfo.append(projectTitle, projectTools);
+
+    // Add all the project information in the project div (<div class="project">)
+    projectDiv.append(img, projectInfo);
+
+    url = projects.key.project_url;
+    projectDiv.onclick = function() {
+      window.open(url);
+    };
+
+    // Push each project into `toRender` array
+    toRender.push(projectDiv);
+  })
+
+  projectsWall.append(...toRender);
+
+}
+
+renderProjects();
+
+
+
+/* async function getTags() {
   const res = await fetch(`${API_URL}/tags/`, {
     method: 'GET',
     headers: { 
@@ -257,14 +272,14 @@ async function getTags() {
       tags.push(tag);
     })
   }
-}
+} */
 
 /* getTags(); */
-console.log('Mira tus tags');
+/* console.log('Mira tus tags');
 console.log(tags);
+ */
 
-
-async function renderProjects() {
+/* async function renderProjects() {
   const res = await fetch(`${API_URL}/projects/`, {
     method: 'GET',
     headers: { 
@@ -323,7 +338,6 @@ async function renderProjects() {
           }
         })
 
-        /* const spanText = document.createTextNode(tagName); */
         const img = document.createElement('img');
         const imgSrc = tagsImages[tagName];
         img.src = imgSrc;
@@ -351,6 +365,6 @@ async function renderProjects() {
 
     projectsWall.append(...toRender);
   }
-}
+} */
 
 /* renderProjects() */
