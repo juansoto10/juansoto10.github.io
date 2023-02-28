@@ -72,7 +72,7 @@ nav a {
 }
 nav a img {
   width:40px;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 
@@ -580,7 +580,7 @@ nav a img {
   border-top: 1px solid var(--red);
   padding-top: 24px;
   padding-bottom: 10px;
-  min-height: 220px;
+  min-height: 125px;
   margin-bottom: 30px;
 }
 .footer__icons {
