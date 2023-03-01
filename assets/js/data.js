@@ -9,6 +9,18 @@ const projects = {
     },
     project_url: 'https://countriesinfo-foryou.netlify.app'
   },
+  valkauPollsWebsite: {
+    name: 'Valkau Polls Website',
+    image_url: '/assets/images/polls-general-list.png',
+    tags: {
+      ReactJS: '/assets/icons/react.svg',
+      Django: '/assets/icons/django-icon.svg',
+      Python: '/assets/icons/python.svg',
+      Redux: '/assets/icons/redux-logo.svg',
+      TailwindCSS: '/assets/icons/tailwind.png',
+    },
+    project_url: 'https://github.com/juansoto10/polls-app-drf-react'
+  },
   theMinefieldGame: {
     name: 'The Minefield Game',
     image_url: '/assets/images/the-minefield-game.png',
