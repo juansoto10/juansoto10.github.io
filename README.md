@@ -1,19 +1,21 @@
-### Hi there 👋
+# Portfolio Page
 
-<!--
-**juansoto10/juansoto10** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This is my Portfolio Page, the place where I show information about me, my work and skills. You can contact me there, using the contact form or the links to my social media. 
 
-Here are some ideas to get you started:
+I use JavaScript to handle events and create content dynamically, showing the different projects I have developed.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+The layout is made using HTML5 and CSS3 to style and make a responsive design.
 
-<!-- /home/juansoto23/juansoto10.github.io/imgs
-/mnt/c/Users/juanp/Pictures/Downloads -->
+## Tech Stack
+
+**Client:** HTML5, CSS3, JavaScript.
+
+
+## Screenshots
+
+![App Screenshot](https://i.postimg.cc/9QXWj5XZ/portfolio.png)
+
+
+## See the project
+
+[Portfolio Page](https://juansoto10.github.io/ 'Portfolio Juan Pablo Soto')
