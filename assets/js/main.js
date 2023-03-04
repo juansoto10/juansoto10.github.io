@@ -220,6 +220,29 @@ function showFunFact() {
 
 showFunFact();
 
+
+/* Language selector */
+
+/* const langSelector = document.getElementById("lang-selector");
+const langOptions = document.querySelectorAll("#lang-selector ul li a");
+
+// Toggle the visibility of the language options dropdown
+langSelector.addEventListener("click", function() {
+  this.querySelector("ul").classList.toggle("show");
+});
+
+// Set the text and image of the selected language option
+langOptions.forEach(function(option) {
+  option.addEventListener("click", function(event) {
+    event.preventDefault();
+    const selectedLang = this.querySelector("img").alt;
+    langSelector.querySelector("img").src = this.querySelector("img").src;
+    langSelector.querySelector("img").alt = selectedLang;
+    langSelector.querySelector("span").textContent = selectedLang;
+    langSelector.querySelector("ul").classList.remove("show");
+  });
+}); */
+
 /* const tags = []; */
 
 
