@@ -3,10 +3,15 @@ const openMenu = document.querySelector('.mbtn-op');
 const closeMenu = document.querySelector('.mbtn-cl');
 // Nav-bar
 const navLinks = document.querySelector('.nav-links');
+
+const langSelector = document.querySelector('#lang-selector');
+const langOptions = document.querySelector('.lang-options');
+
 const optAbout = document.querySelector('.opt-about');
 const optSkills = document.querySelector('.opt-skills');
 const optProjects = document.querySelector('.opt-projects');
 const optContact = document.querySelector('.opt-contact');
+
 const sectHome = document.querySelector('.sect-home');
 /* const footer = document.querySelector('.footer'); */
 const footerTextDiv = document.querySelector('.footer__text');
@@ -80,10 +85,12 @@ function displayMenu() {
   console.log('resize or load')
   if (window.innerWidth >= 1100) {
     navLinks.classList.remove('hide');
+    langOptions.classList.remove('hide')
     openMenu.classList.add('inactive');
     closeMenu.classList.add('inactive');
   } else if (window.innerWidth < 1100) {
     navLinks.classList.add('hide');
+    langOptions.classList.add('hide')
     openMenu.classList.remove('inactive');
 
     if (navLinks.classList.contains('switched')) {
@@ -222,6 +229,17 @@ showFunFact();
 
 
 /* Language selector */
+
+
+
+langSelector.addEventListener('click', () => {
+  // langOptions.classList.toggle('active');
+  // langOptions.classList.toggle('lang-options');
+  if (window.innerWidth < 1100) {
+    langOptions.classList.toggle('switched');
+    langOptions.classList.toggle('hide');
+  } 
+});
 
 /* const langSelector = document.getElementById("lang-selector");
 const langOptions = document.querySelectorAll("#lang-selector ul li a");

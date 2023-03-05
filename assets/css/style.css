@@ -55,7 +55,7 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 11;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,43 +80,54 @@ nav a img {
 .lang {
   position: fixed;
   z-index: 1;
-  bottom: 4px;
-  left: 0;
-  padding: 8px;
+  top: 63px;
+  right: 0;
+  padding: 10px;
 }
 .lang ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: block;
-  flex-direction: column;
 }
 .lang ul li {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 .lang a {
   text-decoration: none;
 }
 #lang-selector {
-  margin-top: 6px;
+  margin-bottom: 5px;
 }
 .lang img {
-  width: 18px;
+  width: 23px;
   margin-bottom: 6px;
 }
 
-.lang .lang-options {
-  display: block;
+/* .lang-options {
+  height: 0;
   opacity: 0;
-  transition: 0.3s;
+  transition: height 0.3s ease-out, opacity 0.3s ease-out;
+} */
+.lang-options .active {
+  /* transition: display 1s ease; */
+  /* display: block; */
+  height: auto;
+  opacity: 1;
+  transition: height 0.3s ease-out, opacity 0.3s ease-out;
+  /* transition: 0.3s ease; */
 }
 
-.lang ul li:hover .lang-options {
+/* .lang .lang-options .active {
+  display: block;
+  transition: 0.5s ease;
+} */
+
+/* .lang ul li:hover .lang-options {
   display: block;
   opacity: 1;
 }
-
+ */
 /* .lang li {
   display: inline-block;
   position: relative;
@@ -127,8 +138,8 @@ nav a img {
 
 .nav-links {
   position: absolute;
-  top: 75px;
-  right: 10px;
+  top: 72px;
+  right: 8px;
   width: 60%;
   max-width: 275px;
   height: 36vh;
@@ -676,6 +687,7 @@ nav a img {
 .footer__author p {
   font-family: var(--main-font);
   font-size: 1.3rem;
+  margin-bottom: 5px;
 }
 .footer__author span {
   color: var(--red);
@@ -714,7 +726,7 @@ nav a img {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 37%;
+  top: 43%;
   right: 10px;
 }
 .social-links img {

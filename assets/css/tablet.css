@@ -9,6 +9,20 @@ nav h1 a {
 /* BUTTONS OPEN AND CLOSE MENU */
 
 
+/* LANGUAGE SELECTOR */
+.lang {
+  position: fixed;
+  z-index: 1;
+  top: 67px;
+  right: 0;
+  padding: 10px;
+}
+.lang img {
+  width: 29px;
+  margin-bottom: 6px;
+}
+
+
 /* SECTION HOME */
 .sect-home {
   margin-bottom: 0;
@@ -187,7 +201,7 @@ nav h1 a {
 
 /* SOCIAL LINKS */
 .social-links {
-  top: 37%;
+  top: 46%;
   right: 13px;
 }
 .social-links img {
