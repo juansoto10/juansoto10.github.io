@@ -80,7 +80,7 @@ nav a img {
 .lang {
   position: fixed;
   z-index: 1;
-  top: 63px;
+  top: 64px;
   right: 0;
   padding: 10px;
 }
@@ -100,7 +100,7 @@ nav a img {
   margin-bottom: 5px;
 }
 .lang img {
-  width: 23px;
+  width: 25px;
   margin-bottom: 6px;
 }
 
@@ -240,7 +240,7 @@ nav a img {
 .sect-home__m-txt .hs {
   color: var(--red);
   font-weight: 700;
-  font-size: 4.4rem;
+  font-size: 4.3rem;
   text-shadow:  1px 1px 16px #f6184c8a;
   cursor: pointer;
   display: inline-block;
@@ -650,7 +650,7 @@ nav a img {
   align-items: center;
   width: 30px;
   height: 90px;
-  margin: 0 30px;
+  margin: 0 18px;
 }
 .footer__icons div {
   height: calc(100% / 3);
