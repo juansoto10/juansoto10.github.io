@@ -1,14 +1,4 @@
 const projects = {
-  countriesInfo: {
-    name: 'Countries Info Website',
-    image_url: '/assets/images/countries-info.png',
-    tags: {
-      JavaScript: '/assets/icons/javascript.svg',
-      TailwindCSS: '/assets/icons/tailwind.png',
-      HTML5: '/assets/icons/html5.svg'
-    },
-    project_url: 'https://countriesinfo-foryou.netlify.app'
-  },
   valkauPollsWebsite: {
     name: 'Valkau Polls Website',
     image_url: '/assets/images/polls-general-list.png',
@@ -20,6 +10,26 @@ const projects = {
       TailwindCSS: '/assets/icons/tailwind.png',
     },
     project_url: 'https://github.com/juansoto10/polls-app-drf-react'
+  },
+  summerCampExperiences: {
+    name: 'Summer Camp Experiences Website',
+    image_url: '/assets/images/summer-camp.png',
+    tags: {
+      JavaScript: '/assets/icons/javascript.svg',
+      TailwindCSS: '/assets/icons/tailwind.png',
+      HTML5: '/assets/icons/html5.svg'
+    },
+    project_url: 'https://summer-camp-experiences.netlify.app/'
+  },
+  countriesInfo: {
+    name: 'Countries Info Website',
+    image_url: '/assets/images/countries-info.png',
+    tags: {
+      JavaScript: '/assets/icons/javascript.svg',
+      TailwindCSS: '/assets/icons/tailwind.png',
+      HTML5: '/assets/icons/html5.svg'
+    },
+    project_url: 'https://countriesinfo-foryou.netlify.app'
   },
   theMinefieldGame: {
     name: 'The Minefield Game',
