@@ -1,6 +1,8 @@
+import CustomButton from './CustomButton'
+
 const HomeSection = () => {
   return (
-    <section className="flex flex-col justify-center items-start min-h-[calc(100vh-72px)] lg:px-16 xl:px-32 2xl:px-48 3xl:px-80 mt-[72px] mb-24 xl:mb-0">
+    <section className="flex flex-col justify-center items-start min-h-layout lg:px-16 xl:px-32 2xl:px-48 3xl:px-80 pt-8 sm:pt-0 mt-[72px] mb-24 xl:mb-0">
       <div>
         <h1 className="mb-3 sm:mb-4 md:mb-5 text-bleu font-sec md:text-lg">
           Hi, my name is
@@ -28,8 +30,9 @@ const HomeSection = () => {
       <div className="flex">
         <a
           href="#contact"
-          className="border border-bleu px-7 lg:px-9 py-4 font-sec text-sm lg:text-base text-bleu rounded leading-[13px] lg:leading-[16px] cursor-pointer"
+          className="styled-button border border-bleu px-7 lg:px-9 py-4 font-sec text-sm lg:text-base text-bleu rounded leading-[13px] lg:leading-[16px] cursor-pointer transition duration-[400ms] hover:text-white"
         >
+          <span></span>
           Get in touch
         </a>
       </div>

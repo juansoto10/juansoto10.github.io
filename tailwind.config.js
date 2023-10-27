@@ -10,6 +10,9 @@ module.exports = {
       body: 'var(--body-font)',
       sec: 'var(--sec-font)',
     },
+    minHeight: {
+      layout: 'calc(100vh - 100px)',
+    },
     screens: {
       xs: '480px',
       // => @media (min-width: 480px) { ... }
@@ -40,7 +43,7 @@ module.exports = {
       },
       colors: {
         bleu: '#160ef4',
-        'soft-black': '#0b0c0c',
+        'soft-black': '#101111',
       },
       content: {
         customafter: 'url()',

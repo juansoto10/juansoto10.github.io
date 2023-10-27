@@ -41,7 +41,7 @@ const AboutSection = () => {
               alt=""
               width={500}
               height={500}
-              className="w-3/5 md:w-4/5 max-w-[260px] rounded-md sepia hover:sepia-0 transition"
+              className="w-3/5 md:w-4/5 max-w-[260px] rounded-md sepia-[0.75] hover:sepia-0 transition duration-[400ms]"
             />
           </div>
         </div>

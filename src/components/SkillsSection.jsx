@@ -29,15 +29,13 @@ const SkillsSection = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col justify-center items-start min-h-[calc(100vh-72px)] lg:px-16 xl:px-32 2xl:px-48 3xl:px-80 mb-24 xl:mb-0 w-full"
+      className="flex flex-col justify-center items-start min-h-layout lg:px-16 xl:px-32 2xl:px-48 3xl:px-80 mb-28 w-full"
     >
       <div className="w-full">
         <Title text="Skills" />
       </div>
       <div className="w-full md:text-lg">
-        <p className="mb-10">
-          Here are a few technologies I&apos;ve been working with recently:
-        </p>
+        <p className="mb-10">Some technologies I&apos;ve worked with:</p>
         <ul className="grid grid-cols-3 xs:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-x-5 gap-y-8 xs:gap-x-10 xs:gap-y-12 md:gap-x-12 md:gap-y-16">
           {skills.map((skill) => (
             <Skill imgSrc={skill.imgSrc} text={skill.name} key={skill.name} />

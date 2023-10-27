@@ -25,3 +25,45 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.styled-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.styled-link span {
+  position: absolute;
+}
+
+.styled-link span {
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: -100%;
+  transition: .4s;
+}
+
+.styled-link:hover span {
+  left: 0;
+}
+
+.styled-button {
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.styled-button span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #160ef4;
+  transition: .4s;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+}
+
+.styled-button:hover span {
+  left: 0;
+}

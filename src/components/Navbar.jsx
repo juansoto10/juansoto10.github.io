@@ -3,7 +3,10 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
-// import Image from 'next/image'
+import Image from 'next/image'
+import logoIcon from '/public/icons/logo.svg'
+import useBodyScrollLock from '@/hooks/useBodyScrollLock'
+// import { useState, useEffect, useRef } from 'react'
 
 const navigation = [
   { name: 'About', href: '#about', current: false },
@@ -17,16 +20,21 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  const [isLocked, toggle] = useBodyScrollLock()
+
   return (
-    <Disclosure as="nav" className="fixed w-full bg-black z-10">
+    <Disclosure as="nav" className="fixed w-full bg-black z-20 transition">
       {({ open }) => (
         <>
-          <div className="px-2 sm:px-8 lg:px-12">
-            <div className="relative flex h-[72px] items-center justify-between">
+          <div className="px-2 md:px-8 lg:px-12">
+            <div className="relative flex h-[100px] items-center justify-between">
               {/* Div Mobile menu button*/}
-              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 border border-black text-bleu hover:border hover:border-bleu focus:outline-none focus:ring-1 focus:ring-inset focus:ring-bleu">
+                <Disclosure.Button
+                  className="relative inline-flex items-center justify-center rounded-md p-2 border border-black text-bleu hover:border hover:border-bleu focus:outline-none focus:ring-1 focus:ring-inset focus:ring-bleu"
+                  onClick={toggle}
+                >
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -38,33 +46,41 @@ export default function Navbar() {
               </div>
               {/* End Div Mobile menu button*/}
               {/* Div Normal menu and Icon*/}
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+              <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-between">
                 <div className="flex flex-shrink-0 items-center">
                   <Link href="/">
-                    <img
-                      className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                      alt="Your Company"
+                    <Image
+                      src={logoIcon}
+                      alt="Juan Soto Logo"
+                      width={50}
+                      height={50}
+                      className="h-10 w-auto"
                     />
                   </Link>
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                <div className="hidden md:ml-6 md:block">
+                  <div className="flex items-center space-x-6">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current
-                            ? 'bg-gray-900 text-white'
-                            : 'text-bleu hover:border hover:border-bleu',
-                          'rounded px-4 border border-black transition py-2 text-base font-medium'
+                          item.current ? 'bg-gray-900 text-white' : 'text-bleu',
+                          'rounded px-1 py-1 hover:text-indigo-200 transition duration-[400ms] text-base font-medium font-sec styled-link'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
+                        <span className="bg-indigo-200"></span>
                         {item.name}
                       </a>
                     ))}
+                    <a
+                      href="#contact"
+                      className="styled-button border border-bleu px-5 py-3 font-sec text-base text-bleu rounded leading-[13px] lg:leading-[16px] cursor-pointer transition duration-[400ms] hover:text-white"
+                    >
+                      <span></span>
+                      Resume
+                    </a>
                   </div>
                 </div>
               </div>
@@ -72,8 +88,8 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+          <Disclosure.Panel className="md:hidden bg-soft-black">
+            <div className="flex flex-col justify-center items-center px-3 py-5">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -82,14 +98,23 @@ export default function Navbar() {
                   className={classNames(
                     item.current
                       ? 'bg-gray-900 text-white'
-                      : 'text-bleu hover:bg-bleu hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                      : 'text-bleu hover:text-indigo-200',
+                    'block rounded-md px-3 py-2 text-base text-center font-medium w-full mb-5 transition'
                   )}
                   aria-current={item.current ? 'page' : undefined}
+                  onClick={toggle}
                 >
                   {item.name}
                 </Disclosure.Button>
               ))}
+
+              <a
+                href="#contact"
+                className="styled-button border border-bleu px-5 py-3 font-sec text-base text-bleu rounded leading-[13px] lg:leading-[16px] cursor-pointer transition duration-[400ms] hover:text-white mb-4"
+              >
+                <span></span>
+                Resume
+              </a>
             </div>
           </Disclosure.Panel>
         </>
