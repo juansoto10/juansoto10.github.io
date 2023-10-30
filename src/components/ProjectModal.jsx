@@ -16,8 +16,8 @@ const ProjectModal = ({
   return (
     <>
       {modalOpen && (
-        <div className="fixed flex justify-center items-center h-screen w-screen top-3 left-0 bg-[rgba(0,0,0,.65)] p-10 z-40">
-          <div className="relative w-full min-h-[150px] bg-soft-black rounded-md shadow-md p-5 md:px-7 xl:py-7 xl:px-9 max-w-[750px] lg:max-w-[1200px] 2xl:max-w-[1400px]">
+        <div className="fixed flex justify-center items-center h-screen w-screen top-0 left-0 bg-[rgba(0,0,0,.65)] px-8 py-10 z-40">
+          <div className="relative w-full min-h-[150px] bg-soft-black rounded-md shadow-md px-5 py-4 md:px-7 xl:py-7 xl:px-9 max-w-[750px] lg:max-w-[1200px] 2xl:max-w-[1400px]">
             <button
               onClick={() => toggleModal(!modalOpen)}
               className="absolute top-4 xl:top-7 right-4 md:right-6 xl:right-[33px] p-1 border-none transition rounded text-bleu hover:bg-indigo-200"
@@ -40,12 +40,10 @@ const ProjectModal = ({
                 <Image
                   src={image}
                   alt=""
-                  width={200}
-                  height={200}
                   className="w-full max-w-none hover:sepia-[.85] transition duration-[400ms] mb-5 lg:mb-0"
                 />
               </a>
-              <p className="text-sm md:text-base mb-5 md:mb-0 md:ml-5 xl:ml-7 tracking-wide lg:w-1/2 2xl:md:w-1/3">
+              <p className="text-sm md:text-base mb-5 md:mb-0 lg:ml-5 xl:ml-7 tracking-wide lg:w-1/2 2xl:md:w-1/3 whitespace-pre-line">
                 {description}
               </p>
             </div>

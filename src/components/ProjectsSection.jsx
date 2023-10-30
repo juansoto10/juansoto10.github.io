@@ -9,8 +9,9 @@ import batabitImage from '@/app/assets/images/batabit-landing-page.png'
 const projects = [
   {
     name: 'Polls Website',
-    description:
-      'Answer interesting questions on different topics organized by category and shows the votes for each option after voting.',
+    description: `Answer interesting questions on different topics organized by category and shows the    votes for each option after voting.
+
+      This project was developed using Django REST Framework for the backend and React.js, Redux and TailwindCSS for the frontend.`,
     image: pollsImage,
     tags: ['React.js', 'Django REST Framework', 'Redux', 'TailwindCSS'],
     githubLink: 'https://github.com/juansoto10/polls-app-drf-react',
@@ -18,10 +19,9 @@ const projects = [
   },
   {
     name: 'Camp Experiences Website',
-    description: `Read and comment on
-      the experiences of students who went to summer
-      camps in the United States. You can also 
-      ask questions, or share your own stories.`,
+    description: `Read and comment on the experiences of students who went to summer camps in the United States. You can also  ask questions, or share your own stories.
+      
+      Developed using HTML, TailwindCSS and JavaScript to show the experiences dynamically by manipulating DOM content.`,
     image: campsImage,
     tags: ['JavaScript', 'HTML5', 'TailwindCSS'],
     githubLink: 'https://github.com/juansoto10/summer-camp-experiences-page',
@@ -29,7 +29,9 @@ const projects = [
   },
   {
     name: 'Countries Info Website',
-    description: `See basic information about all the countries around the world. The user can filter by region or search directly by name.`,
+    description: `See basic information about all the countries around the world. The user can filter by region or search directly by name.
+    
+      This project was developed using HTML5, TailwindCSS and JavaScript to create the cards for each country dynamically by manipulating DOM content.`,
     image: countriesImage,
     tags: ['JavaScript', 'HTML5', 'TailwindCSS'],
     githubLink: 'https://github.com/juansoto10/landing-page-batabit',

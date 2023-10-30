@@ -20,43 +20,27 @@ const ProjectCard = ({
     <>
       <div
         onClick={() => setModalOpen(!modalOpen)}
-        className="max-w-lg lg:max-w-xl rounded-md overflow-hidden shadow-lg hover:scale-105 ease-out duration-300 cursor-pointer"
+        className="relative max-w-lg lg:max-w-xl rounded-md overflow-hidden shadow-lg hover:scale-105 ease-out duration-300 cursor-pointer"
       >
         <a href={externalLink ? externalLink : githubLink} rel="no-referrer">
           <Image
             src={image}
             alt=""
-            width={200}
-            height={200}
-            className="w-full hover:sepia-[.85] transition duration-[400ms] h"
+            width={500}
+            height={500}
+            className="w-full hover:sepia-[.85] transition duration-[400ms]"
           />
         </a>
 
-        <div className="flex flex-col justify-start bg-soft-black lg:h-[290px] xl:h-[230px]">
-          <div className="px-6 py-4">
+        <div className="flex flex-col justify-start bg-soft-black p-6 pb-10 xs:pb-6 xs:min-h-[150px]">
+          <div className="">
             <div className="mb-2">
-              <a
-                href={externalLink ? externalLink : githubLink}
-                rel="no-referrer"
-                className="font-bold text-bleu text-xl hover:text-indigo-200 transition duration-[400ms]"
-              >
-                {name}
-              </a>
+              <p className="font-bold text-bleu text-xl">{name}</p>
             </div>
-            <p className="text-white text-base">{description}</p>
           </div>
-          <div className="flex justify-between items-center px-6 pt-4 pb-3">
-            <div>
-              {/* <span className="inline-block text-sm font-semibold font-sec text-indigo-200 mr-4 mb-2">
-              React
-            </span>
-            <span className="inline-block text-sm font-semibold font-sec text-indigo-200 mr-4 mb-2">
-              TailwindCSS
-            </span>
-            <span className="inline-block text-sm font-semibold font-sec text-indigo-200 mr-4 mb-2">
-              Django
-            </span> */}
 
+          <div className="flex items-center">
+            <div>
               {tags.map((tag) => (
                 <span
                   key={tag}
@@ -66,33 +50,9 @@ const ProjectCard = ({
                 </span>
               ))}
             </div>
-            <div className="flex justify-around w-1/6 text-bleu">
-              <a
-                href={githubLink}
-                className="hover:bg-indigo-200 transition duration-[400ms] p-1 mb-2 rounded"
-                rel="no-referrer"
-              >
-                <Image
-                  src={githubIcon}
-                  alt="GitHub Link"
-                  width={20}
-                  height={20}
-                />
-              </a>
-              {externalLink && (
-                <a
-                  href={externalLink}
-                  className="hover:bg-indigo-200 transition duration-[400ms] p-1 mb-2 rounded"
-                  rel="no-referrer"
-                >
-                  <Image
-                    src={externalLinkIcon}
-                    alt="Project Link"
-                    width={20}
-                    height={20}
-                  />
-                </a>
-              )}
+
+            <div className="absolute bottom-5 right-5">
+              <p className="text-bleu text-xs">Click to see more</p>
             </div>
           </div>
         </div>

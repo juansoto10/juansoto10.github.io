@@ -75,7 +75,8 @@ export default function Navbar() {
                       </a>
                     ))}
                     <a
-                      href="#contact"
+                      href="./resume/resume_frontend-dev_juan-pablo-soto.pdf"
+                      target="_blank"
                       className="styled-button border border-bleu px-5 py-3 font-sec text-base text-bleu rounded leading-[13px] lg:leading-[16px] cursor-pointer transition duration-[400ms] hover:text-white"
                     >
                       <span></span>
@@ -88,6 +89,7 @@ export default function Navbar() {
             </div>
           </div>
 
+          {/* Mobile menu */}
           <Disclosure.Panel className="md:hidden bg-soft-black">
             <div className="flex flex-col justify-center items-center px-3 py-5">
               {navigation.map((item) => (
@@ -109,7 +111,8 @@ export default function Navbar() {
               ))}
 
               <a
-                href="#contact"
+                href="./resume/resume_frontend-dev_juan-pablo-soto.pdf"
+                target="_blank"
                 className="styled-button border border-bleu px-5 py-3 font-sec text-base text-bleu rounded leading-[13px] lg:leading-[16px] cursor-pointer transition duration-[400ms] hover:text-white mb-4"
               >
                 <span></span>
@@ -117,6 +120,7 @@ export default function Navbar() {
               </a>
             </div>
           </Disclosure.Panel>
+          {/* End Mobile menu */}
         </>
       )}
     </Disclosure>

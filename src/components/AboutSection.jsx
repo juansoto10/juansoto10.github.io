@@ -15,11 +15,12 @@ const AboutSection = () => {
       <div className="md:flex md:flex-wrap">
         <div className="md:text-lg md:w-3/5">
           <p className="mb-6">
-            I&apos;m a Web Developer from Colombia, passionate about technology
-            and everything that involves. I work mainly with frontend
-            technologies but I also have knowledge on backend and API REST
-            development using Python, Django and relational databases such as
-            PostgreSQL, MySQL and SQLite.
+            I&apos;m a Web Developer from Colombia, passionate about technology.
+            I have experience in the creation of websites using React.js,
+            Next.js, JavaScript, HTML5, CSS3 and TailwindCSS. I work mainly with
+            frontend technologies but I also have knowledge on backend and API
+            REST development using Python, Django and relational databases such
+            as PostgreSQL, MySQL and SQLite.
           </p>
           <p className="mb-6">
             I&apos;m an organized person, with attention to detail, self-taught
@@ -28,9 +29,8 @@ const AboutSection = () => {
             languages using different applications and strategies.
           </p>
           <p className="mb-12">
-            At this moment I&apos;m looking for a job opportunity in tech and to
-            contribute with my knowledge and skills to the creation of solutions
-            for companies and clients in this sector.
+            I&apos;m looking forward to contributing my knowledge and skills to
+            creating solutions for companies and clients in this sector.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ const AboutSection = () => {
               alt=""
               width={500}
               height={500}
-              className="w-3/5 md:w-4/5 max-w-[260px] rounded-md sepia-[0.75] hover:sepia-0 transition duration-[400ms]"
+              className="w-3/5 md:w-4/5 max-w-[250px] rounded-md sepia-[0.75] hover:sepia-0 transition duration-[400ms]"
             />
           </div>
         </div>

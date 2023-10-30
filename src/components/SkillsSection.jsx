@@ -15,12 +15,12 @@ import cssIcon from '/public/icons/css.svg'
 const skills = [
   { name: 'React', imgSrc: reactIcon },
   { name: 'Next.js', imgSrc: nextIcon },
-  { name: 'JavaScript', imgSrc: javascriptIcon },
-  { name: 'TailwindCSS', imgSrc: tailwindIcon },
   { name: 'Django', imgSrc: djangoIcon },
+  { name: 'JavaScript', imgSrc: javascriptIcon },
+  { name: 'Python', imgSrc: pythonIcon },
   { name: 'HTML5', imgSrc: htmlIcon },
   { name: 'CSS3', imgSrc: cssIcon },
-  { name: 'Python', imgSrc: pythonIcon },
+  { name: 'TailwindCSS', imgSrc: tailwindIcon },
   { name: 'PostgreSQL', imgSrc: postgresqlIcon },
   { name: 'Git', imgSrc: gitIcon },
 ]
