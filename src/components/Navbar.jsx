@@ -5,7 +5,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import Image from 'next/image'
 import logoIcon from '/public/icons/logo.svg'
-import useBodyScrollLock from '@/hooks/useBodyScrollLock'
+// import useBodyScrollLock from '@/hooks/useBodyScrollLock'
 // import { useState, useEffect, useRef } from 'react'
 
 const navigation = [
@@ -20,7 +20,7 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  const [isLocked, toggle] = useBodyScrollLock()
+  // const [isLocked, toggle] = useBodyScrollLock()
 
   return (
     <Disclosure as="nav" className="fixed w-full bg-black z-20 transition">
@@ -31,10 +31,7 @@ export default function Navbar() {
               {/* Div Mobile menu button*/}
               <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button
-                  className="relative inline-flex items-center justify-center rounded-md p-2 border border-black text-bleu hover:border hover:border-bleu focus:outline-none focus:ring-1 focus:ring-inset focus:ring-bleu"
-                  onClick={toggle}
-                >
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 border border-black text-bleu hover:border hover:border-bleu focus:outline-none focus:ring-1 focus:ring-inset focus:ring-bleu">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -104,7 +101,6 @@ export default function Navbar() {
                     'block rounded-md px-3 py-2 text-base text-center font-medium w-full mb-5 transition'
                   )}
                   aria-current={item.current ? 'page' : undefined}
-                  onClick={toggle}
                 >
                   {item.name}
                 </Disclosure.Button>
