@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
         {/* <meta name="theme-color" content="#ffffff" /> */}
       </head>
 
-      <body className="font-body bg-black">
+      <body className="font-body text-white bg-black">
         <Navbar />
         {children}
         <Footer />
