@@ -22,20 +22,20 @@ const ProjectCard = ({
         onClick={() => setModalOpen(!modalOpen)}
         className="relative max-w-lg lg:max-w-xl rounded-md overflow-hidden shadow-lg hover:scale-105 ease-out duration-300 cursor-pointer"
       >
-        <a href={externalLink ? externalLink : githubLink} rel="no-referrer">
-          <Image
-            src={image}
-            alt=""
-            width={500}
-            height={500}
-            className="w-full hover:sepia-[.85] transition duration-[400ms]"
-          />
-        </a>
+        <Image
+          src={image}
+          alt=""
+          width={500}
+          height={500}
+          className="w-full hover:sepia-[.85] transition duration-[400ms]"
+        />
 
         <div className="flex flex-col justify-start bg-soft-black p-6 pb-10 xs:pb-6 xs:min-h-[150px]">
           <div className="">
-            <div className="mb-2">
-              <p className="font-bold text-bleu text-xl">{name}</p>
+            <div className="mb-3">
+              <p className="font-bold text-white lg:text-lg xl:text-xl">
+                {name}
+              </p>
             </div>
           </div>
 
