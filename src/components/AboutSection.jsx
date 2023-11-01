@@ -29,8 +29,8 @@ const AboutSection = () => {
             languages using different applications and strategies.
           </p>
           <p className="mb-12">
-            I&apos;m looking forward to contributing my knowledge and skills to
-            creating solutions for companies and clients in this sector.
+            I&apos;m looking forward to contributing my knowledge and
+            adaptability to turn ideas into reality.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ const AboutSection = () => {
               alt=""
               width={500}
               height={500}
-              className="w-3/5 md:w-4/5 max-w-[200px] rounded-md sepia-[0.75] hover:sepia-0 transition duration-[400ms]"
+              className="w-3/5 md:w-4/5 max-w-[180px] lg:max-w-[200px] rounded-md sepia-[0.75] hover:sepia-0 transition duration-[400ms]"
             />
           </div>
         </div>

@@ -16,7 +16,7 @@ const ProjectModal = ({
   return (
     <>
       {modalOpen && (
-        <div className="fixed flex justify-center items-center h-screen w-screen top-0 left-0 bg-[rgba(0,0,0,.65)] px-5 py-10 z-40">
+        <div className="fixed flex justify-center items-center h-screen w-screen top-0 left-0 bg-[rgba(0,0,0,.65)] px-[18px] lg:px-12 py-10 z-40">
           <div className="relative w-full min-h-[150px] bg-soft-black rounded-md shadow-md p-5 pb-4 md:px-7 md:pt-7 xl:pt-8 xl:pb-6 xl:px-9 max-w-[580px] lg:max-w-[1200px] 2xl:max-w-[1400px]">
             <button
               onClick={() => toggleModal(!modalOpen)}
@@ -25,7 +25,7 @@ const ProjectModal = ({
               <XMarkIcon className="w-6 h-6 font-bold" aria-hidden="true" />
             </button>
 
-            <div className="flex justify-between items-center mb-6 md:mb-7 2xl:mb-9 pb-4 border-b border-solid border-indigo-200">
+            <div className="flex justify-between items-center mb-6 md:mb-7 2xl:mb-9 pb-4 border-b border-solid border-black">
               <h3 className="font-bold text-base md:text-lg lg:text-xl xl:text-2xl text-white w-4/5">
                 {name}
               </h3>
@@ -43,7 +43,7 @@ const ProjectModal = ({
                   className="w-full max-w-none hover:sepia-[.85] transition duration-[400ms] mb-5 lg:mb-0"
                 />
               </a>
-              <p className="text-sm md:text-base mb-5 md:mb-0 lg:ml-5 xl:ml-7 tracking-wide lg:w-1/2 2xl:md:w-1/3 whitespace-pre-line">
+              <p className="text-sm md:text-base mb-7 md:mb-0 lg:ml-5 xl:ml-7 tracking-wide lg:w-1/2 2xl:md:w-1/3 whitespace-pre-line">
                 {description}
               </p>
             </div>

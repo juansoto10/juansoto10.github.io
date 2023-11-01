@@ -98,7 +98,7 @@ export default function Navbar() {
                     item.current
                       ? 'bg-gray-900 text-white'
                       : 'text-bleu hover:text-indigo-200',
-                    'block rounded-md px-3 py-2 text-base text-center font-medium w-full mb-5 transition'
+                    'block rounded-md px-3 py-4 text-base text-center font-medium w-full mb-5 transition'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
@@ -109,7 +109,7 @@ export default function Navbar() {
               <a
                 href="./resume/resume_frontend-dev_juan-pablo-soto.pdf"
                 target="_blank"
-                className="styled-button border border-bleu px-5 py-3 font-sec text-base text-bleu rounded leading-[13px] lg:leading-[16px] cursor-pointer transition duration-[400ms] hover:text-white mb-4"
+                className="styled-button border border-bleu px-5 py-3 font-sec text-base text-bleu rounded leading-[14px] lg:leading-[16px] cursor-pointer transition duration-[400ms] hover:text-white mt-4 mb-4 bg-black"
               >
                 <span></span>
                 Resume

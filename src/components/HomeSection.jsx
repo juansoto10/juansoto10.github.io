@@ -1,8 +1,8 @@
-import CustomButton from './CustomButton'
+// import CustomButton from './CustomButton'
 
 const HomeSection = () => {
   return (
-    <section className="flex flex-col justify-center items-start sm:min-h-layout lg:px-16 xl:px-32 2xl:px-48 3xl:px-80 pt-6 sm:pt-4 mt-[100px] mb-24 2xl:mb-0">
+    <section className="flex flex-col justify-center items-start sm:min-h-layout lg:px-16 xl:px-32 2xl:px-48 3xl:px-80 pt-12 sm:pt-4 mt-[100px] mb-24 2xl:mb-0">
       <div>
         <h1 className="mb-3 sm:mb-4 md:mb-5 text-bleu font-sec md:text-lg">
           Hi, my name is
@@ -22,9 +22,7 @@ const HomeSection = () => {
         <p className="lg:text-lg 2xl:text-xl mb-10 sm:mb-12 md:mb-14">
           I&apos;m a frontend developer with a passion for creating seamless
           digital experiences. Proficient in React, Next.js, and TailwindCSS, I
-          bring a versatile skill set that can benefit any company. I&apos;m
-          excited to contribute my knowledge and adaptability to turn ideas into
-          reality.
+          bring a versatile skill set that can benefit any company.
         </p>
       </div>
       <div className="flex">

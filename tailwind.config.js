@@ -44,7 +44,8 @@ module.exports = {
       colors: {
         // bleu: '#160ef4',
         bleu: '#0F35F5',
-        'soft-black': '#101111',
+        // 'soft-black': '#101111',
+        'soft-black': '#161717',
       },
       content: {
         customafter: 'url()',

@@ -80,7 +80,7 @@ const ContactForm = () => {
 
       <div className="flex justify-center">
         <button
-          className="styled-button border border-bleu px-7 lg:px-9 py-4 font-sec text-sm lg:text-base text-bleu rounded leading-[13px] lg:leading-[16px] cursor-pointer transition duration-[400ms] hover:text-white"
+          className="styled-button border border-bleu px-7 lg:px-9 py-4 font-sec text-sm lg:text-base text-bleu rounded leading-[13px] lg:leading-[16px] cursor-pointer transition duration-[400ms] hover:text-white bg-black"
           type="submit"
         >
           <span></span>

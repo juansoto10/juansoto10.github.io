@@ -8,7 +8,7 @@ import batabitImage from '@/app/assets/images/batabit-landing-page.png'
 
 const projects = [
   {
-    name: 'Polls Website',
+    name: 'Polls App',
     description: `Answer interesting questions on different topics organized by category and shows the    votes for each option after voting.
 
       This project was developed using Django REST Framework for the backend and React.js, Redux and TailwindCSS for the frontend.`,
