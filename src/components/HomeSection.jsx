@@ -2,7 +2,7 @@
 
 const HomeSection = () => {
   return (
-    <section className="flex flex-col justify-center items-start sm:min-h-layout lg:px-16 xl:px-32 2xl:px-48 3xl:px-80 pt-12 sm:pt-4 mt-[100px] mb-24 2xl:mb-0">
+    <section className="flex flex-col justify-center items-start sm:min-h-layout lg:px-16 xl:px-32 2xl:px-48 3xl:px-80 pt-12 sm:pt-4 2xl:pt-0 mt-[100px] mb-24 2xl:mb-0">
       <div>
         <h1 className="mb-3 sm:mb-4 md:mb-5 text-bleu font-sec md:text-lg">
           Hi, my name is
